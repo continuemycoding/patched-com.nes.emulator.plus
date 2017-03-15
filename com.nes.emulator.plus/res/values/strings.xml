@@ -51,7 +51,7 @@
     <string name="common_google_play_services_sign_in_failed_title">Sign in failed</string>
     <string name="common_google_play_services_sign_in_failed_text">Error signing in the specified account. Please choose a different account.</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
-    <string name="app_name">NES Emulator</string>
+    <!--<string name="app_name">NES Emulator</string>-->
     <string name="ga_trackingId">UA-88423865-2</string>
     <string name="ga_appName">NES Emulator</string>
     <string name="ga_appVersion">1.1.1</string>

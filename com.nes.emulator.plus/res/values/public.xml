@@ -466,7 +466,7 @@
     <public type="string" name="common_google_play_services_sign_in_failed_title" id="0x7f080030" />
     <public type="string" name="common_google_play_services_sign_in_failed_text" id="0x7f080031" />
     <public type="string" name="wallet_buy_button_place_holder" id="0x7f080032" />
-    <public type="string" name="app_name" id="0x7f080033" />
+    <!--<public type="string" name="app_name" id="0x7f080033" />-->
     <public type="string" name="ga_trackingId" id="0x7f080034" />
     <public type="string" name="ga_appName" id="0x7f080035" />
     <public type="string" name="ga_appVersion" id="0x7f080036" />
