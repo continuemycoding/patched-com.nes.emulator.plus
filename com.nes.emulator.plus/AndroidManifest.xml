@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:largeHeap="true" package="com.nes.emulator.plus" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859">
+    <uses-feature android:glEsVersion="0x00020000" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.nostalgiaemulators.nesfull.NesFullApplication" android:theme="@style/AppTheme">
+        <meta-data android:name="svnversion" android:value="@string/svn_version"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"/>
+        <activity android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.nes1.NesGalleryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.nes1.NesEmulatorActivity"/>
+        <activity android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.framework.base.OpenGLTestActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:label="Nostalgia.NES Lite" android:name="com.nostalgiaemulators.framework.base.RestarterActivity" android:process=":restarter"/>
+        <activity android:label="NES Emulator" android:name="com.nostalgiaemulators.framework.ui.advertising.AppWallActivity"/>
+        <activity android:label="Remote controller" android:name="com.nostalgiaemulators.framework.ui.remotecontroller.RemoteControllerActivity" android:screenOrientation="landscape"/>
+        <activity android:label="Select slot" android:name="com.nostalgiaemulators.framework.ui.gamegallery.SlotSelectionActivity"/>
+        <activity android:label="@string/general_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.GeneralPreferenceActivity" android:theme="@style/PrefTheme">
+            <intent-filter>
+                <action android:name="com.nostalgiaemulators.nesfull.GENERALPREF"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/game_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.GamePreferenceActivity" android:theme="@style/PrefTheme"/>
+        <activity android:label="@string/key_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.KeyboardSettingsActivity" android:theme="@style/PrefTheme">
+            <intent-filter>
+                <action android:name="com.nostalgiaemulators.nesfull.KEYBOARDPREF"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="Cheats" android:name="com.nostalgiaemulators.framework.ui.cheats.CheatsActivity"/>
+        <activity android:label="FB" android:name="com.nostalgiaemulators.framework.ui.social_net.FacebookPictureActivity"/>
+        <activity android:label="@string/game_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.TouchControllerSettingsActivity">
+            <intent-filter>
+                <action android:name="com.nostalgiaemulators.nesfull.TOUCHPREF"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="Slot import" android:name="com.nostalgiaemulators.nes1.NesSlotImportActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:scheme="file"/>
+                <data android:pathPattern=".*\\.nness"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:scheme="http"/>
+                <data android:pathPattern=".*\\.nness"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/vnd.nesnostalgia"/>
+                <data android:host="*"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/octet-stream"/>
+                <data android:host="*"/>
+                <data android:scheme="content"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/game_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.ScreenViewPortSettingsActivity">
+            <intent-filter>
+                <action android:name="com.nostalgiaemulators.nesfull.SCREENPREF"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coderplus.filepicker.FilePickerActivity"/>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="org.acra.CrashReportDialog" android:theme="@android:style/Theme.Dialog"/>
+    </application>
+</manifest>

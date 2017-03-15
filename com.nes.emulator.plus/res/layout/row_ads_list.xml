@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/row_ads_list" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/game_item_bck" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:src="@drawable/ads_icon" android:contentDescription="@string/empty_desc" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/ads_color" android:ellipsize="end" android:gravity="center" android:id="@id/row_game_item_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/todays_top_apps" android:maxLines="2" android:shadowColor="@color/ads_color" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="6.0" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/game_item_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ads_next" />
+</LinearLayout>

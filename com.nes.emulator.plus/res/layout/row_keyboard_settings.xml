@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/row_keyboard_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="KEY UP" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@id/row_keyboard_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="action up" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:background="#00ffffff" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_weight="1.0" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/row_keyboard_key_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="KEY_DPAD_UP" />
+</LinearLayout>

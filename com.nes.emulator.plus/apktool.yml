@@ -1,0 +1,23 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.nes.emulator.plus.apk
+compressionType: false
+doNotCompress:
+- arsc
+- zip
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '17'
+sharedLibrary: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.2
+versionInfo:
+  versionCode: '3'
+  versionName: 1.1.1

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/act_gallery_main_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mad="http://schemas.android.com/apk/res-auto" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/game_gallery_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back" android:layout_centerVertical="true" />
+                    <ProgressBar android:id="@id/game_gallery_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@anim/progress_rotate_anim2" android:layout_toRightOf="@id/game_gallery_back" android:layout_centerVertical="true" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/game_gallery_zip_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/ic_zip_indicator" android:layout_toRightOf="@id/game_gallery_progressbar" android:layout_centerVertical="true" />
+                    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/main_color" android:id="@id/game_gallery_zip_indicator_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:text="NES-games" android:singleLine="true" android:layout_toRightOf="@id/game_gallery_zip_indicator" android:layout_centerVertical="true" />
+                    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/act_gallery_search_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                            <EditText android:textColor="@color/main_color" android:textColorHint="#ff0b4256" android:layout_gravity="center_vertical" android:id="@id/act_gallery_search_editbox" android:background="#00000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:hint="@string/act_game_gallery_search_hint" android:singleLine="true" android:layout_weight="1.0" />
+                            <ImageButton android:layout_gravity="center_vertical" android:background="#00000000" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search" />
+                        </LinearLayout>
+                        <ImageButton android:layout_gravity="center_vertical" android:id="@id/game_gallery_search_btn" android:background="@drawable/ab_button_selector" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_search" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/game_gallery_controller_switch_btn" android:background="@drawable/ab_button_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_gamepad" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/game_gallery_menu_btn" android:background="@drawable/ab_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_menu" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/game_gallery_list_switch_btn" android:background="@drawable/ab_button_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_list" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.viewpagerindicator.TitlePageIndicator android:id="@id/game_gallery_pager_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.nostalgiaemulators.framework.ui.gamegallery.FixedViewPager android:id="@id/game_gallery_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <LinearLayout android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:background="@drawable/top_shadow" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginBottom="1.0dip" />
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/act_gallery_no_games_container" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="30.0dip" android:textColor="@color/main_color" android:gravity="center_horizontal" android:id="@id/act_gallery_no_games_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/gallery_no_roms_found" android:shadowColor="@color/main_color" android:shadowRadius="10.0" />
+                    <ImageButton android:layout_gravity="center_horizontal" android:id="@id/act_gallery_no_games_refresh" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_refresh_large" />
+                </LinearLayout>
+            </FrameLayout>
+            <com.google.android.gms.ads.AdView android:id="@id/ad_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="ca-app-pub-5505857826308324/1651658490" />
+        </LinearLayout>
+        <Button android:id="@id/appwallbutton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="TODAY'S TOP APPS!!!" />
+    </LinearLayout>
+</RelativeLayout>

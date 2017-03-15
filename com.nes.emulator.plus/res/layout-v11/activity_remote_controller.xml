@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:multitouch="http://schemas.android.com/apk/res-auto">
+    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchLayer android:id="@id/act_remote_mtl" android:background="#ff000000" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:id="@id/button_back" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_back_selector" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:layout_gravity="center_vertical" android:id="@id/button_select" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_select_selector" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:layout_gravity="center_vertical" android:id="@id/button_start" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/r_button_start_selector" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:id="@id/button_connect" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_connect_selector" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:id="@id/button_search" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_search_selector" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:id="@id/button_menu" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_menu_selector" />
+                </LinearLayout>
+            </FrameLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/dpad" android:layout_width="230.0dip" android:layout_height="230.0dip" android:layout_marginLeft="5.0dip" android:layout_centerVertical="true">
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:id="@id/button_up" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_up_selector" android:layout_centerHorizontal="true" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:id="@id/button_right" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_right_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:id="@id/button_down" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_down_selector" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:id="@id/button_left" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_left_selector" android:layout_centerVertical="true" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:id="@id/button_center" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_center_selector" android:layout_centerInParent="true" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchTwoButtonArea android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_left_up_mask" multitouch:first_button="@id/button_up" multitouch:second_button="@id/button_left" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchTwoButtonArea android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_right_up_mask" android:layout_alignParentRight="true" multitouch:first_button="@id/button_up" multitouch:second_button="@id/button_right" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchTwoButtonArea android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_right_down_mask" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" multitouch:first_button="@id/button_down" multitouch:second_button="@id/button_right" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchTwoButtonArea android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_left_down_mask" android:layout_alignParentBottom="true" multitouch:first_button="@id/button_down" multitouch:second_button="@id/button_left" />
+                </RelativeLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ab_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:layout_gravity="right" android:id="@id/button_a" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/r_button_a_selector" />
+                    <com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchImageButton android:layout_gravity="right" android:id="@id/button_b" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="40.0dip" android:src="@drawable/r_button_b_selector" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.nostalgiaemulators.framework.ui.multitouchbutton.MultitouchLayer>
+    <FrameLayout android:background="#ff000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <EditText android:layout_gravity="center" android:id="@id/search_editbox" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="Type search name" android:singleLine="true" />
+    </FrameLayout>
+    <TextView android:textSize="100.0dip" android:textColor="#ff003047" android:gravity="center" android:id="@id/port_indicator" android:paddingLeft="90.0dip" android:paddingTop="70.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_centerInParent="true" />
+</RelativeLayout>
