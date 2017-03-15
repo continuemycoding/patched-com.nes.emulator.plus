@@ -459,6 +459,13 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58b82f9e4ad1562c13001606"])
         }
+
+        sanmutongzi {
+            resValue "string", "app_name", "三目童子"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58c7784bf5ade47765001294"])
+        }
     }
 
     productFlavors.all { productFlavor ->
