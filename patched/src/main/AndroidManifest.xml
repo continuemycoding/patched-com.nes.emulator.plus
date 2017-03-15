@@ -13,41 +13,41 @@
         <meta-data android:name="svnversion" android:value="@string/svn_version"/>
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"/>
-        <activity android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.nes1.NesGalleryActivity">
+        <activity android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"/>
+        <activity android:screenOrientation="sensorLandscape" android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.nes1.NesGalleryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.nes1.NesEmulatorActivity"/>
-        <activity android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.framework.base.OpenGLTestActivity"/>
-        <activity android:configChanges="orientation|screenSize" android:label="Nostalgia.NES Lite" android:name="com.nostalgiaemulators.framework.base.RestarterActivity" android:process=":restarter"/>
-        <activity android:label="NES Emulator" android:name="com.nostalgiaemulators.framework.ui.advertising.AppWallActivity"/>
-        <activity android:label="Remote controller" android:name="com.nostalgiaemulators.framework.ui.remotecontroller.RemoteControllerActivity" android:screenOrientation="landscape"/>
-        <activity android:label="Select slot" android:name="com.nostalgiaemulators.framework.ui.gamegallery.SlotSelectionActivity"/>
-        <activity android:label="@string/general_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.GeneralPreferenceActivity" android:theme="@style/PrefTheme">
+        <activity android:screenOrientation="sensorLandscape" android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.nes1.NesEmulatorActivity"/>
+        <activity android:screenOrientation="sensorLandscape" android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.framework.base.OpenGLTestActivity"/>
+        <activity android:screenOrientation="sensorLandscape" android:configChanges="orientation|screenSize" android:label="Nostalgia.NES Lite" android:name="com.nostalgiaemulators.framework.base.RestarterActivity" android:process=":restarter"/>
+        <activity android:screenOrientation="sensorLandscape" android:label="NES Emulator" android:name="com.nostalgiaemulators.framework.ui.advertising.AppWallActivity"/>
+        <activity android:label="Remote controller" android:name="com.nostalgiaemulators.framework.ui.remotecontroller.RemoteControllerActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:screenOrientation="sensorLandscape" android:label="Select slot" android:name="com.nostalgiaemulators.framework.ui.gamegallery.SlotSelectionActivity"/>
+        <activity android:screenOrientation="sensorLandscape" android:label="@string/general_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.GeneralPreferenceActivity" android:theme="@style/PrefTheme">
             <intent-filter>
                 <action android:name="com.nostalgiaemulators.nesfull.GENERALPREF"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/game_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.GamePreferenceActivity" android:theme="@style/PrefTheme"/>
-        <activity android:label="@string/key_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.KeyboardSettingsActivity" android:theme="@style/PrefTheme">
+        <activity android:screenOrientation="sensorLandscape" android:label="@string/game_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.GamePreferenceActivity" android:theme="@style/PrefTheme"/>
+        <activity android:screenOrientation="sensorLandscape" android:label="@string/key_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.KeyboardSettingsActivity" android:theme="@style/PrefTheme">
             <intent-filter>
                 <action android:name="com.nostalgiaemulators.nesfull.KEYBOARDPREF"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:label="Cheats" android:name="com.nostalgiaemulators.framework.ui.cheats.CheatsActivity"/>
-        <activity android:label="FB" android:name="com.nostalgiaemulators.framework.ui.social_net.FacebookPictureActivity"/>
-        <activity android:label="@string/game_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.TouchControllerSettingsActivity">
+        <activity android:screenOrientation="sensorLandscape" android:label="Cheats" android:name="com.nostalgiaemulators.framework.ui.cheats.CheatsActivity"/>
+        <activity android:screenOrientation="sensorLandscape" android:label="FB" android:name="com.nostalgiaemulators.framework.ui.social_net.FacebookPictureActivity"/>
+        <activity android:screenOrientation="sensorLandscape" android:label="@string/game_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.TouchControllerSettingsActivity">
             <intent-filter>
                 <action android:name="com.nostalgiaemulators.nesfull.TOUCHPREF"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:label="Slot import" android:name="com.nostalgiaemulators.nes1.NesSlotImportActivity">
+        <activity android:screenOrientation="sensorLandscape" android:label="Slot import" android:name="com.nostalgiaemulators.nes1.NesSlotImportActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -79,13 +79,13 @@
                 <data android:scheme="content"/>
             </intent-filter>
         </activity>
-        <activity android:label="@string/game_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.ScreenViewPortSettingsActivity">
+        <activity android:screenOrientation="sensorLandscape" android:label="@string/game_pref" android:name="com.nostalgiaemulators.framework.ui.preferences.ScreenViewPortSettingsActivity">
             <intent-filter>
                 <action android:name="com.nostalgiaemulators.nesfull.SCREENPREF"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.coderplus.filepicker.FilePickerActivity"/>
-        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="org.acra.CrashReportDialog" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:screenOrientation="sensorLandscape" android:name="com.coderplus.filepicker.FilePickerActivity"/>
+        <activity android:screenOrientation="sensorLandscape" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="org.acra.CrashReportDialog" android:theme="@android:style/Theme.Dialog"/>
     </application>
 </manifest>
