@@ -15,7 +15,7 @@
             <include android:id="@id/slot_2" layout="@layout/row_slot_item" />
             <include android:id="@id/slot_3" layout="@layout/row_slot_item" />
         </LinearLayout>
-        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:visibility="gone">
             <include android:id="@id/slot_4" layout="@layout/row_slot_item" />
             <include android:id="@id/slot_5" layout="@layout/row_slot_item" />
             <include android:id="@id/slot_6" layout="@layout/row_slot_item" />
