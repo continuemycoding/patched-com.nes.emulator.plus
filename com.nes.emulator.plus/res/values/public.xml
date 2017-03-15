@@ -970,7 +970,7 @@
     <public type="dimen" name="top_panel_touchcontroler_height" id="0x7f0e000f" />
     <public type="dimen" name="slot_item_size" id="0x7f0e0010" />
     <public type="dimen" name="slot_hint_text_size" id="0x7f0e0011" />
-    <public type="dimen" name="top_panel_button_height" id="0x7f0e0012" />
+    <!--<public type="dimen" name="top_panel_button_height" id="0x7f0e0012" />-->
     <public type="array" name="general_pref_rotation_list" id="0x7f0f0000" />
     <public type="array" name="general_pref_rotation_values" id="0x7f0f0001" />
     <public type="array" name="general_pref_shader_list" id="0x7f0f0002" />
