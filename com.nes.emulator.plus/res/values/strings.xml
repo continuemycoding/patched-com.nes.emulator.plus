@@ -86,12 +86,12 @@ This file is intended for %s
     <string name="game_menu_fds_eject_disk">EJECT DISK</string>
     <string name="game_menu_fds_insert_disk">INSERT DISK</string>
     <string name="game_menu_fds_switch_side">SWITCH DISK SIDE</string>
-    <string name="game_menu_reset">RESET</string>
-    <string name="game_menu_load">LOAD STATE</string>
-    <string name="game_menu_save">SAVE STATE</string>
+    <string name="game_menu_reset">重玩</string>
+    <string name="game_menu_load">读档</string>
+    <string name="game_menu_save">存档</string>
     <string name="game_menu_cheats">CHEATS</string>
     <string name="game_menu_screenshot">TAKE SCREENSHOT</string>
-    <string name="game_menu_settings">GAME SETTINGS</string>
+    <string name="game_menu_settings">设置</string>
     <string name="game_menu_back_to_past">REWIND</string>
     <string name="game_zapper_collision">Zapper is in collision with remote controller!</string>
     <string name="toast_cheats_enabled">Number of cheats enabled: %d</string>
