@@ -16,6 +16,6 @@
     <dimen name="dilog_button_margin">10.0dip</dimen>
     <dimen name="dialog_bck_pading">19.0dip</dimen>
     <dimen name="top_panel_touchcontroler_height">50.0dip</dimen>
-    <dimen name="slot_item_size">95.0dip</dimen>
+    <dimen name="slot_item_size">150.0dip</dimen>
     <dimen name="slot_hint_text_size">22.0dip</dimen>
 </resources>
