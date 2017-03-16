@@ -19,6 +19,9 @@ public abstract class EmulatorActivity extends ImmersiveActivity implements Game
     @DexIgnore
     public abstract Emulator getEmulatorInstance();
 
+    @DexReplace
+    private void requestNewInterstitial(){}
+
     @DexIgnore
     @Override
     public void onGameMenuClosed(GameMenu gameMenu) {
