@@ -269,6 +269,13 @@ android {
 //            resValue "string", "app_type", "战略策略"
 //        }
 
+        emulator {
+            resValue "string", "app_name", "NES 模拟器"
+            resValue "string", "app_type", ""
+
+            addManifestPlaceholders([UMENG_APPKEY: "58aa733d1c5dd059600003ef"])
+        }
+
         xiaoaojianghu {
             //versionCode 130
             //versionName "1.30"
