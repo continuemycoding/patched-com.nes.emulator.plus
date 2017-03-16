@@ -479,7 +479,7 @@
 
     if-ne v4, v0, :cond_2
 
-    const-string v4, "LOAD STATE"
+    const-string v4, "读档"
 
     :goto_0
     move-object/from16 v0, v18
@@ -815,7 +815,7 @@
     .end local v16    # "focusTime":J
     .end local v21    # "timeFormat":Ljava/text/DateFormat;
     :cond_2
-    const-string v4, "SAVE STATE"
+    const-string v4, "存档"
 
     goto/16 :goto_0
 

@@ -55,7 +55,7 @@
     <string name="ga_trackingId">UA-88423865-2</string>
     <string name="ga_appName">NES Emulator</string>
     <string name="ga_appVersion">1.1.1</string>
-    <string name="send_slot">Share state</string>
+    <string name="send_slot">分享</string>
     <string name="send_slot_subject" formatted="false">%s (%s)</string>
     <string name="send_slot_message" formatted="false">"Save state for: %s
 Date: %s %s
@@ -74,14 +74,14 @@ This file is intended for %s
     <string name="adblocker_installed">In the Lite version, this feature is ad-supported. Please uninstall any ad blocking software or purchase the Pro version if you want to use this feature.</string>
     <string name="too_slow">"We are sorry, the emulator is not responding. Your device's performance seems to be too low to run this app."</string>
     <string name="act_emulator_invalid_cheat">"Invalid cheat: '%s'"</string>
-    <string name="act_emulator_load_game_failed">Failed to load game</string>
-    <string name="act_emulator_save_state_failed">Failed to save state</string>
-    <string name="act_emulator_load_state_failed">Failed to load state</string>
+    <string name="act_emulator_load_game_failed">游戏加载失败</string>
+    <string name="act_emulator_save_state_failed">存档失败</string>
+    <string name="act_emulator_load_state_failed">读档失败</string>
     <string name="act_remote_controller_select_server">Select server</string>
     <string name="act_remote_controller_set_manually">Set server manually</string>
     <string name="dialog_select_port_title">Select port</string>
-    <string name="act_slot_popup_menu_delete">Erase state</string>
-    <string name="act_slot_popup_menu_send">Share state</string>
+    <string name="act_slot_popup_menu_delete">删除</string>
+    <string name="act_slot_popup_menu_send">分享</string>
     <string name="act_slot_hint">Long press on item to show pop up menu</string>
     <string name="game_menu_fds_eject_disk">EJECT DISK</string>
     <string name="game_menu_fds_insert_disk">INSERT DISK</string>
@@ -203,10 +203,10 @@ This file is intended for %s
     <string name="rate_dialog_message">Please rate 5* to unlock this SAVE feature!</string>
     <string name="rate_dialog_positive">Rate 5*</string>
     <string name="rate_dialog_negative">Later</string>
-    <string name="act_import_slot_search_label">Searching for the ROM</string>
-    <string name="act_import_slot_search_title">Save state import</string>
-    <string name="act_import_game_ot_found">The ROM for the save state not found</string>
-    <string name="act_import_wrong_format">Invalid file format</string>
+    <string name="act_import_slot_search_label">正在扫描游戏</string>
+    <string name="act_import_slot_search_title">导入存档</string>
+    <string name="act_import_game_ot_found">没有找到游戏存档</string>
+    <string name="act_import_wrong_format">文件格式错误</string>
     <string name="whats_new_title">"What's new"</string>
     <string name="time_travel">Rewind</string>
     <string name="action_general_pref">com.nostalgiaemulators.nesfull.GENERALPREF</string>
