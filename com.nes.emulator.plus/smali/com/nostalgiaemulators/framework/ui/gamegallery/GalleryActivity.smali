@@ -2486,7 +2486,7 @@
     .line 823
     new-instance v6, Ljava/lang/StringBuilder;
 
-    const-string v4, "Hey, check out this cool emulator! I think you might like it!\n"
+    const-string v4, "推荐个非常好用的NES模拟器，你肯定会喜欢的!\n"
 
     invoke-direct {v6, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -2587,7 +2587,7 @@
     const-string v5, "android.intent.action.VIEW"
 
     .line 841
-    const-string v6, "http://game4nut.vn/downloads"
+    const-string v6, "http://www.soorom.com/"
 
     invoke-static {v6}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
