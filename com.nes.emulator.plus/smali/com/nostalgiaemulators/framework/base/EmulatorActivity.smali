@@ -2560,6 +2560,8 @@
 
     move-result v14
 
+    const/4 v14, 0x1
+
     invoke-static {v14}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v9
