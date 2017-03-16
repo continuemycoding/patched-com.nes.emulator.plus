@@ -18,6 +18,12 @@ public class NesEmulatorActivity extends EmulatorActivity {
     @DexIgnore
     public NesEmulatorActivity(){}
 
+    @DexIgnore
+    @Override
+    public Emulator getEmulatorInstance() {
+        return null;
+    }
+
     @DexReplace
     @Override
     public void onGameMenuPrepare(GameMenu gameMenu)
