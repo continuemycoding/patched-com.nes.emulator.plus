@@ -98,8 +98,8 @@ This file is intended for %s
     <string name="act_game_screenshot_failed">Failed to save screenshot</string>
     <string name="act_game_screenshot_saved">Screenshot saved to: %s</string>
     <string name="act_tcs_reset">RESET</string>
-    <string name="general_pref">General Preferences</string>
-    <string name="game_pref">Game Preferences</string>
+    <string name="general_pref">设置</string>
+    <string name="game_pref">设置</string>
     <string name="key_pref">Keyboard/Gamepad Preferences</string>
     <string name="key_profile_pref">Keyboard/Gamepad profile: %s</string>
     <string name="key_select_profile_pref">Select Profile</string>
@@ -119,9 +119,9 @@ This file is intended for %s
     <string name="general_pref_system_font_desc">Use default Android font for UI</string>
     <string name="general_pref_q_save_load">Quick Save/Load</string>
     <string name="general_pref_q_save_load_desc">Double tap to quick-save (right half of screen) or quick-load (left half of screen)</string>
-    <string name="general_pref_sound_volume">Sound Volume</string>
+    <string name="general_pref_sound_volume">音量大小</string>
     <string name="general_pref_turbo">Turbo Buttons</string>
-    <string name="general_pref_mute">Mute Sound</string>
+    <string name="general_pref_mute">静音</string>
     <string name="general_pref_load_sav_files">Load Battery Saves</string>
     <string name="general_pref_save_sav_files">Save Battery Saves</string>
     <string name="general_pref_load_sav_files_desc">See Help for more info</string>
@@ -137,7 +137,7 @@ This file is intended for %s
     <string name="general_pref_fastforward_toggle">Togglable FF</string>
     <string name="general_pref_fastforward_toggle_desc">Behavior of FF button (or gamepad key)</string>
     <string name="general_pref_fastforward_speed">Fast Forward Speed</string>
-    <string name="general_pref_fullscreen">Force Fullscreen</string>
+    <string name="general_pref_fullscreen">强制全屏</string>
     <string name="game_pref_zapper">Zapper Gun</string>
     <string name="general_pref_rotation">Orientation</string>
     <string name="general_pref_quality">Emulation Quality</string>
