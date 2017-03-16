@@ -26,11 +26,6 @@ public class NesEmulatorActivity extends EmulatorActivity {
         gameMenu.add(R.string.game_menu_save, R.drawable.ic_save);
         gameMenu.add(R.string.game_menu_load, R.drawable.ic_load);
         gameMenu.add(R.string.game_menu_settings, R.drawable.ic_game_settings);
-    }
-
-    @DexIgnore
-    @Override
-    public Emulator getEmulatorInstance() {
-        return null;
+        gameMenu.getItem(R.string.game_menu_settings).setEnable(false);
     }
 }
