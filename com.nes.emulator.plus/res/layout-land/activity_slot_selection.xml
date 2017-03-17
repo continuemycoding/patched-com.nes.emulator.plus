@@ -4,7 +4,7 @@
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="60.0dip">
         <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
             <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/main_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/act_slot_label" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="LOAD SLOT" android:layout_weight="1.0" />
-            <ImageButton android:layout_gravity="center_vertical" android:id="@id/help_btn" android:background="@drawable/ab_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_help" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/help_btn" android:background="@drawable/ab_button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_help" android:visibility="gone" />
         </LinearLayout>
         <LinearLayout android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
     </LinearLayout>
