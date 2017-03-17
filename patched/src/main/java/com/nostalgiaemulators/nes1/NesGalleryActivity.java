@@ -1,12 +1,7 @@
 package com.nostalgiaemulators.nes1;
 
-import com.nostalgiaemulators.framework.Emulator;
-import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.base.GameMenu;
 import com.nostalgiaemulators.framework.ui.gamegallery.GalleryActivity;
-import com.nostalgiaemulators.framework.utils.Utils;
-
-import java.util.Set;
 
 import lanchon.dexpatcher.annotation.DexAdd;
 import lanchon.dexpatcher.annotation.DexEdit;
@@ -37,23 +32,5 @@ public class NesGalleryActivity extends GalleryActivity{
         //gameMenu.add(R.string.gallery_menu_recommend, R.drawable.ic_recommend);
         //gameMenu.add(R.string.gallery_menu_rate_us, R.drawable.ic_star);
         //gameMenu.add(R.string.gallery_menu_help, R.drawable.ic_help_mnu);
-    }
-
-    @DexIgnore
-    @Override
-    public Class<? extends EmulatorActivity> getEmulatorActivityClass() {
-        return null;
-    }
-
-    @DexIgnore
-    @Override
-    public Emulator getEmulatorInstance() {
-        return null;
-    }
-
-    @DexIgnore
-    @Override
-    protected Set<String> getRomExtensions() {
-        return null;
     }
 }
