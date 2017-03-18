@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 
+import com.nostalgiaemulators.framework.Emulator;
+import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.base.GameMenu;
 import com.nostalgiaemulators.framework.ui.gamegallery.GalleryActivity;
 import com.nostalgiaemulators.framework.ui.gamegallery.GameDescription;
@@ -43,7 +45,7 @@ public class NesGalleryActivity extends GalleryActivity{
             Intent intent = new Intent(this, NesEmulatorActivity.class);
             intent.putExtra("game", gameDescription);
             intent.putExtra("slot", 0);
-            intent.putExtra("fromGallery", false);
+            intent.putExtra("fromGallery", true);
             startActivityForResult(intent, 0);
         }
     }
@@ -70,6 +72,16 @@ public class NesGalleryActivity extends GalleryActivity{
         //gameMenu.add(R.string.gallery_menu_recommend, R.drawable.ic_recommend);
         //gameMenu.add(R.string.gallery_menu_rate_us, R.drawable.ic_star);
         //gameMenu.add(R.string.gallery_menu_help, R.drawable.ic_help_mnu);
+    }
+
+    @DexIgnore
+    public Class<? extends EmulatorActivity> getEmulatorActivityClass(){
+        return null;
+    }
+
+    @DexIgnore
+    public Emulator getEmulatorInstance() {
+        return null;
     }
 
     @DexIgnore

@@ -1,9 +1,12 @@
 package com.nostalgiaemulators.nes1;
 
+import android.os.Bundle;
+
 import com.nostalgiaemulators.framework.Emulator;
 import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.base.GameMenu;
 
+import lanchon.dexpatcher.annotation.DexAdd;
 import lanchon.dexpatcher.annotation.DexEdit;
 import lanchon.dexpatcher.annotation.DexIgnore;
 import lanchon.dexpatcher.annotation.DexReplace;
@@ -15,8 +18,28 @@ import lanchon.dexpatcher.annotation.DexReplace;
 @DexEdit
 public class NesEmulatorActivity extends EmulatorActivity {
 
+
+
     @DexIgnore
     public NesEmulatorActivity(){}
+
+    @DexAdd
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        slotToRun = Integer.valueOf(10);
+        //quickLoad();
+    }
+
+    @DexAdd
+    @Override
+    public void onBackPressed()
+    {
+        super.onBackPressed();
+
+        quickSave();
+    }
 
     @DexIgnore
     @Override

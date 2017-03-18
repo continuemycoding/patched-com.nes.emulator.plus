@@ -13,6 +13,13 @@ import lanchon.dexpatcher.annotation.DexReplace;
 
 @DexEdit
 public abstract class EmulatorActivity extends ImmersiveActivity implements GameMenu.OnGameMenuListener{
+
+    @DexEdit
+    protected Integer slotToRun;
+
+    @DexIgnore
+    protected Manager manager;
+
     @DexIgnore
     public EmulatorActivity(){}
 
@@ -21,6 +28,16 @@ public abstract class EmulatorActivity extends ImmersiveActivity implements Game
 
     @DexReplace
     private void requestNewInterstitial(){}
+
+    @DexReplace
+    public void quickLoad(){
+        manager.loadState(10);
+    }
+
+    @DexReplace
+    public void quickSave(){
+        manager.saveState(10);
+    }
 
     @DexIgnore
     @Override
