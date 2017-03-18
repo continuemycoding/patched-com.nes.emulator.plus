@@ -3,6 +3,8 @@ package com.nostalgiaemulators.framework.ui.gamegallery;
 import com.nostalgiaemulators.framework.base.GameMenu;
 import com.nostalgiaemulators.framework.remote.VirtualDPad;
 
+import java.util.ArrayList;
+
 import lanchon.dexpatcher.annotation.DexIgnore;
 
 /**
@@ -10,7 +12,13 @@ import lanchon.dexpatcher.annotation.DexIgnore;
  */
 
 @DexIgnore
-public class GalleryActivity extends BaseGameGalleryActivity implements GalleryPagerAdapter.OnItemClickListener, GameMenu.OnGameMenuListener, VirtualDPad.OnVirtualDPEventsListener{
+public abstract class GalleryActivity extends BaseGameGalleryActivity implements GalleryPagerAdapter.OnItemClickListener, GameMenu.OnGameMenuListener, VirtualDPad.OnVirtualDPEventsListener{
+
+    @DexIgnore
+    public void setNewGames(ArrayList<GameDescription> paramArrayList)
+    {
+
+    }
 
     @DexIgnore
     @Override
