@@ -6,6 +6,7 @@ import com.nostalgiaemulators.framework.Emulator;
 import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.base.GameMenu;
 import com.qiang.framework.helper.SystemHelper;
+import com.qiang.framework.recommend.RecommendManager;
 
 import lanchon.dexpatcher.annotation.DexAdd;
 import lanchon.dexpatcher.annotation.DexEdit;
@@ -22,12 +23,12 @@ public class NesEmulatorActivity extends EmulatorActivity {
     @DexIgnore
     public NesEmulatorActivity(){}
 
-//    @DexAdd
-//    @Override
-//    public void onBackPressed()
-//    {
-//
-//    }
+    @DexAdd
+    @Override
+    public void onBackPressed()
+    {
+        RecommendManager.showDialog(this);
+    }
 
     @DexIgnore
     @Override

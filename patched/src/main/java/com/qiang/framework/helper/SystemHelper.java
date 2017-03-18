@@ -236,7 +236,6 @@ public class SystemHelper
                     public void onClick(DialogInterface dialog, int id)
                     {
                         activity.finish();
-                        System.exit(0);
                     }
                 })
                 .setNegativeButton("取消", null);
@@ -334,7 +333,6 @@ public class SystemHelper
             public void onClick(View v)
             {
                 activity.finish();
-                System.exit(0);
             }
         });
 

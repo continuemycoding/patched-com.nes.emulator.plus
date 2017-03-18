@@ -2,18 +2,16 @@ package com.qiang.framework;
 
 import android.app.Activity;
 import android.app.Application;
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
 import android.os.Bundle;
-import android.telephony.TelephonyManager;
 
+import com.nostalgiaemulators.nesfull.NesFullApplication;
 import com.umeng.analytics.game.UMGameAgent;
 
 /**
  * Created by Administrator on 2017/2/18.
  */
 
-public class MyApplication extends Application implements Application.ActivityLifecycleCallbacks {
+public class MyApplication extends NesFullApplication implements Application.ActivityLifecycleCallbacks {
     private static MyApplication instance;
 
     public static MyApplication getInstance()
