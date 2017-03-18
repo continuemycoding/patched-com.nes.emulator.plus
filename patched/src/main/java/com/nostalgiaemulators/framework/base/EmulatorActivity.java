@@ -2,7 +2,6 @@ package com.nostalgiaemulators.framework.base;
 
 import com.nostalgiaemulators.framework.Emulator;
 
-import lanchon.dexpatcher.annotation.DexAdd;
 import lanchon.dexpatcher.annotation.DexEdit;
 import lanchon.dexpatcher.annotation.DexIgnore;
 import lanchon.dexpatcher.annotation.DexReplace;
@@ -13,9 +12,6 @@ import lanchon.dexpatcher.annotation.DexReplace;
 
 @DexEdit
 public abstract class EmulatorActivity extends ImmersiveActivity implements GameMenu.OnGameMenuListener{
-
-    @DexEdit
-    protected Integer slotToRun;
 
     @DexIgnore
     protected Manager manager;

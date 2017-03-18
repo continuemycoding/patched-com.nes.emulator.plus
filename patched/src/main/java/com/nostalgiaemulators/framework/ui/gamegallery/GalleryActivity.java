@@ -6,6 +6,7 @@ import com.nostalgiaemulators.framework.remote.VirtualDPad;
 import java.util.ArrayList;
 
 import lanchon.dexpatcher.annotation.DexIgnore;
+import lanchon.dexpatcher.annotation.DexReplace;
 
 /**
  * Created by Administrator on 2017/3/17.
@@ -16,6 +17,12 @@ public abstract class GalleryActivity extends BaseGameGalleryActivity implements
 
     @DexIgnore
     public void setNewGames(ArrayList<GameDescription> paramArrayList)
+    {
+
+    }
+
+    @DexIgnore
+    public void setLastGames(ArrayList<GameDescription> paramArrayList)
     {
 
     }

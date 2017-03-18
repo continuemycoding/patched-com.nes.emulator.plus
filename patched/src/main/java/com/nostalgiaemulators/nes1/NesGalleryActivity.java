@@ -11,6 +11,7 @@ import com.nostalgiaemulators.framework.ui.gamegallery.GalleryActivity;
 import com.nostalgiaemulators.framework.ui.gamegallery.GameDescription;
 import com.qiang.framework.helper.FileHelper;
 
+import java.io.File;
 import java.util.Set;
 
 import lanchon.dexpatcher.annotation.DexAdd;
@@ -38,12 +39,8 @@ public class NesGalleryActivity extends GalleryActivity{
             String path = Environment.getDataDirectory() + "/data/" + getPackageName() + "/game.zip";
             FileHelper.copyResource(this, com.qiang.nes.R.raw.game, path);
 
-            GameDescription gameDescription = new GameDescription();
-            gameDescription.name = "";
-            gameDescription.path = path;
-
             Intent intent = new Intent(this, NesEmulatorActivity.class);
-            intent.putExtra("game", gameDescription);
+            intent.putExtra("game", new GameDescription(new File(path)));
             intent.putExtra("slot", 0);
             intent.putExtra("fromGallery", true);
             startActivityForResult(intent, 0);
