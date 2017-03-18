@@ -487,6 +487,13 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58cd72b7310c933e2c0027af"])
         }
+
+        yangjiajiang {
+            resValue "string", "app_name", "杨家将"
+            resValue "string", "app_type", "战略策略"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58cd7646a3251133bd001c26"])
+        }
     }
 
     productFlavors.all { productFlavor ->
