@@ -480,6 +480,13 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58cd6fca82b6355b50001354"])
         }
+
+        shuihuzhuan {
+            resValue "string", "app_name", "水浒传"
+            resValue "string", "app_type", "战略策略"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58cd72b7310c933e2c0027af"])
+        }
     }
 
     productFlavors.all { productFlavor ->
