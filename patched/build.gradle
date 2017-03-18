@@ -494,6 +494,41 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58cd7646a3251133bd001c26"])
         }
+
+        dahuaxiyou {
+            resValue "string", "app_name", "大话西游"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58cd8274310c930d12000dce"])
+        }
+
+        yuefeichuan {
+            resValue "string", "app_name", "岳飞传"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58cd84f9f29d987fe000173f"])
+        }
+
+        taikonghuanxiang {
+            resValue "string", "app_name", "太空幻想"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58cd85a85312ddb1d200265a"])
+        }
+
+        hulujingang {
+            resValue "string", "app_name", "葫芦金刚"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58cd87e7c62dca0846000d00"])
+        }
+
+        nezhachuanqi {
+            resValue "string", "app_name", "哪吒传奇"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58cd87701061d222c80018bf"])
+        }
     }
 
     productFlavors.all { productFlavor ->
