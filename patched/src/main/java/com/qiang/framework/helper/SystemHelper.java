@@ -37,7 +37,6 @@ import com.qiang.framework.download.ApkDownloader;
 import com.umeng.analytics.MobclickAgent;
 import com.qiang.framework.download.DownloadFileFromURL;
 import com.qiang.framework.download.DownloadItem;
-import com.qiang.framework.listener.OnExitListner;
 import com.qiang.framework.listener.UpdateManagerListener;
 import com.qiang.framework.recommend.Product;
 
@@ -229,11 +228,6 @@ public class SystemHelper
 
     public static void showQuitDialog(final Activity activity)
     {
-        showQuitDialog(activity, null);
-    }
-
-    public static void showQuitDialog(final Activity activity, final OnExitListner onExitListner)
-    {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setMessage("退出游戏?")
                 //.setCancelable(false)
@@ -241,12 +235,6 @@ public class SystemHelper
                 {
                     public void onClick(DialogInterface dialog, int id)
                     {
-                        if(onExitListner != null)
-                        {
-                            onExitListner.onExit(0);
-                            return;
-                        }
-
                         activity.finish();
                         System.exit(0);
                     }
@@ -256,12 +244,7 @@ public class SystemHelper
         alert.show();
     }
 
-    public static void showCustomQuitDialog(final Activity activity, final boolean isExit, final Product product)
-    {
-        showCustomQuitDialog(activity, product, isExit, null);
-    }
-
-    public static void showCustomQuitDialog(final Activity activity, final Product product, final boolean isExit, final OnExitListner quitApplicationListener)
+    public static void showCustomQuitDialog(final Activity activity, final Product product)
     {
         final Dialog dialog = new AlertDialog.Builder(activity).create();
         dialog.show();
@@ -350,12 +333,6 @@ public class SystemHelper
             @Override
             public void onClick(View v)
             {
-                if(quitApplicationListener != null)
-                {
-                    quitApplicationListener.onExit(0);
-                    return;
-                }
-
                 activity.finish();
                 System.exit(0);
             }

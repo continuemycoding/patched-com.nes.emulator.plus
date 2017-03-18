@@ -3,20 +3,14 @@ package com.qiang.framework.recommend;
 import android.app.Activity;
 
 import com.qiang.framework.helper.SystemHelper;
-import com.qiang.framework.listener.OnExitListner;
 
 public class RecommendManager
 {
 	public static void showDialog(final Activity activity)
 	{
-		showDialog(activity, null);
-	}
-
-	public static void showDialog(final Activity activity, OnExitListner quitApplicationListener)
-	{
 		if(!SystemHelper.isWifiConnected(activity))
 		{
-			SystemHelper.showQuitDialog(activity, quitApplicationListener);
+			SystemHelper.showQuitDialog(activity);
 			return;
 		}
 
@@ -25,12 +19,12 @@ public class RecommendManager
 			if(!product.recommend || SystemHelper.isAppInstalled(activity, product.packageName))
 				continue;
 
-			SystemHelper.showCustomQuitDialog(activity, product, true, quitApplicationListener);
+			SystemHelper.showCustomQuitDialog(activity, product);
 
 			return;
 		}
 
-		SystemHelper.showQuitDialog(activity, quitApplicationListener);
+		SystemHelper.showQuitDialog(activity);
 	}
 
 	public void showMoreGames(final Activity activity)
