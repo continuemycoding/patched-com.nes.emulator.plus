@@ -14,14 +14,14 @@
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <activity android:screenOrientation="sensorLandscape" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"/>
-        <activity android:screenOrientation="sensorLandscape" android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.nes1.NesGalleryActivity">
+        <activity android:screenOrientation="sensorLandscape" android:name="com.nostalgiaemulators.nes1.NesGalleryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:screenOrientation="sensorLandscape" android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.nes1.NesEmulatorActivity"/>
-        <activity android:screenOrientation="sensorLandscape" android:label="@string/title_activity_main" android:name="com.nostalgiaemulators.framework.base.OpenGLTestActivity"/>
+        <activity android:screenOrientation="sensorLandscape" android:name="com.nostalgiaemulators.nes1.NesEmulatorActivity"/>
+        <activity android:screenOrientation="sensorLandscape" android:name="com.nostalgiaemulators.framework.base.OpenGLTestActivity"/>
         <activity android:screenOrientation="sensorLandscape" android:configChanges="orientation|screenSize" android:label="Nostalgia.NES Lite" android:name="com.nostalgiaemulators.framework.base.RestarterActivity" android:process=":restarter"/>
         <activity android:screenOrientation="sensorLandscape" android:label="NES Emulator" android:name="com.nostalgiaemulators.framework.ui.advertising.AppWallActivity"/>
         <activity android:label="Remote controller" android:name="com.nostalgiaemulators.framework.ui.remotecontroller.RemoteControllerActivity" android:screenOrientation="sensorLandscape"/>
