@@ -209,33 +209,13 @@ android {
     }
 
     productFlavors {
-//        Battletoads {
-//            resValue "string", "app_name", "忍者蛙"
-//            resValue "string", "app_type", "动作冒险"
-//        }
-//
 //        GekikameNinjaDen {
 //            resValue "string", "app_name", "激龟忍者传"
 //            resValue "string", "app_type", "动作冒险"
 //        }
 //
-//        jmrzhwcn {
-//            resValue "string", "app_name", "假面忍者花丸" //汉化版
-//            resValue "string", "app_type", "动作冒险"
-//        }
-//
 //        lubangsanshi {
 //            resValue "string", "app_name", "鲁邦三世"
-//            resValue "string", "app_type", "动作冒险"
-//        }
-//
-//        paopaolong {
-//            resValue "string", "app_name", "泡泡龙"
-//            resValue "string", "app_type", "动作冒险"
-//        }
-//
-//        paopaolong2 {
-//            resValue "string", "app_name", "泡泡龙2"
 //            resValue "string", "app_type", "动作冒险"
 //        }
 //
@@ -255,11 +235,6 @@ android {
 //        }
 //
 //        shuihushenshou {
-//            resValue "string", "app_name", "水浒神兽"
-//            resValue "string", "app_type", "角色扮演"
-//        }
-
-//        shuihuzhuan {
 //            resValue "string", "app_name", "水浒神兽"
 //            resValue "string", "app_type", "角色扮演"
 //        }
@@ -549,6 +524,20 @@ android {
             resValue "string", "app_type", "角色扮演"
 
             addManifestPlaceholders([UMENG_APPKEY: "58cdfab582b6355855000b0b"])
+        }
+
+        paopaolong {
+            resValue "string", "app_name", "泡泡龙"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce03cb45297d044b000ed6"])
+        }
+
+        paopaolong2 {
+            resValue "string", "app_name", "泡泡龙2"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce0442c895766338000f14"])
         }
     }
 
