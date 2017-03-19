@@ -527,8 +527,8 @@ android {
             addManifestPlaceholders([UMENG_APPKEY: "58ce0874aed1797d8600090e"])
         }
 
-        rzsggd {
-            resValue "string", "app_name", "忍者神龟格斗"
+        renzheguigedou {
+            resValue "string", "app_name", "忍者龟格斗"
             resValue "string", "app_type", "格斗对打"
 
             addManifestPlaceholders([UMENG_APPKEY: "58ce088945297d184200136e"])
