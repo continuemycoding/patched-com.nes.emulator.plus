@@ -529,6 +529,27 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58cd87701061d222c80018bf"])
         }
+
+        wulinwaizhuan {
+            resValue "string", "app_name", "武林外传"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58cdf66c2ae85b7998000952"])
+        }
+
+        tangbohudianqiuxiang {
+            resValue "string", "app_name", "唐伯虎点秋香"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58cdf9131061d2405a000b25"])
+        }
+
+        xianjianqixia {
+            resValue "string", "app_name", "仙剑奇侠"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58cdfab582b6355855000b0b"])
+        }
     }
 
     productFlavors.all { productFlavor ->
