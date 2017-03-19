@@ -541,14 +541,14 @@ android {
             addManifestPlaceholders([UMENG_APPKEY: "58ce08b2717c19129c001268"])
         }
 
-        ThirtySixStratagems {
+        sanshiliuji {
             resValue "string", "app_name", "三十六计"
             resValue "string", "app_type", "战略策略"
 
             addManifestPlaceholders([UMENG_APPKEY: "58ce08d0734be4022200137b"])
         }
 
-        GekikameNinjaDen {
+        jiguirenzhezhuan {
             resValue "string", "app_name", "激龟忍者传"
             resValue "string", "app_type", "动作冒险"
 
