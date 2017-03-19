@@ -103,6 +103,8 @@ android {
         resValue "string", "button_x_visible", "false"
         resValue "string", "button_y_visible", "false"
 
+        resValue "bool", "multiplayer", "false"
+
         resValue "string", "add_logo", "false"
     }
 
@@ -214,6 +216,8 @@ android {
             resValue "string", "app_name", "NES 模拟器"
             resValue "string", "app_type", ""
 
+            resValue "bool", "multiplayer", "true"
+
             addManifestPlaceholders([UMENG_APPKEY: "58aa733d1c5dd059600003ef"])
         }
 
@@ -308,6 +312,8 @@ android {
             resValue "string", "app_name", "超级玛丽"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "bool", "multiplayer", "true"
+
             addManifestPlaceholders([UMENG_APPKEY: "58b303c91061d21bcb000351"])
         }
 
@@ -335,12 +341,16 @@ android {
             resValue "string", "app_name", "赤色要塞"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "bool", "multiplayer", "true"
+
             addManifestPlaceholders([UMENG_APPKEY: "58b4182c677baa4d9600115f"])
         }
 
         shaluomanshe {
             resValue "string", "app_name", "沙罗曼蛇"
             resValue "string", "app_type", "飞行射击"
+
+            resValue "bool", "multiplayer", "true"
 
             addManifestPlaceholders([UMENG_APPKEY: "58b41873e88bad70ad0024f9"])
         }
@@ -349,6 +359,8 @@ android {
             resValue "string", "app_name", "绿色兵团"
             resValue "string", "app_type", "飞行射击"
 
+            resValue "bool", "multiplayer", "true"
+
             addManifestPlaceholders([UMENG_APPKEY: "58b42e6a07fe652de8001fa6"])
         }
 
@@ -356,12 +368,16 @@ android {
             resValue "string", "app_name", "双截龙2"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "bool", "multiplayer", "true"
+
             addManifestPlaceholders([UMENG_APPKEY: "58b82947a40fa33549000525"])
         }
 
         shuangjielong3 {
             resValue "string", "app_name", "双截龙3"
             resValue "string", "app_type", "动作冒险"
+
+            resValue "bool", "multiplayer", "true"
 
             addManifestPlaceholders([UMENG_APPKEY: "58b82998717c191595001160"])
         }
@@ -384,28 +400,36 @@ android {
             resValue "string", "app_name", "坦克大战"
             resValue "string", "app_type", "动作冒险"
 
-            addManifestPlaceholders([UMENG_APPKEY: "58b82f9e4ad1562c13001606"])
+            resValue "bool", "multiplayer", "true"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce4b2a7f2c74214d001521"])
         }
 
         renzheshengui {
             resValue "string", "app_name", "忍者神龟"
             resValue "string", "app_type", "动作冒险"
 
-            addManifestPlaceholders([UMENG_APPKEY: "58b82f9e4ad1562c13001606"])
+            resValue "bool", "multiplayer", "true"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce4b4c7666132f360016ee"])
         }
 
         renzheshengui2 {
             resValue "string", "app_name", "忍者神龟2"
             resValue "string", "app_type", "动作冒险"
 
-            addManifestPlaceholders([UMENG_APPKEY: "58b82f9e4ad1562c13001606"])
+            resValue "bool", "multiplayer", "true"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce4b667f2c7430e000185f"])
         }
 
         renzheshengui3 {
             resValue "string", "app_name", "忍者神龟3"
             resValue "string", "app_type", "动作冒险"
 
-            addManifestPlaceholders([UMENG_APPKEY: "58b82f9e4ad1562c13001606"])
+            resValue "bool", "multiplayer", "true"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce4b7b8630f53df40015be"])
         }
 
         sanmutongzi {
@@ -496,6 +520,8 @@ android {
             resValue "string", "app_name", "泡泡龙"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "bool", "multiplayer", "true"
+
             addManifestPlaceholders([UMENG_APPKEY: "58ce03cb45297d044b000ed6"])
         }
 
@@ -503,12 +529,16 @@ android {
             resValue "string", "app_name", "泡泡龙2"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "bool", "multiplayer", "true"
+
             addManifestPlaceholders([UMENG_APPKEY: "58ce0442c895766338000f14"])
         }
 
         shangweimiling {
             resValue "string", "app_name", "上尉密令"
             resValue "string", "app_type", "动作冒险"
+
+            resValue "bool", "multiplayer", "true"
 
             addManifestPlaceholders([UMENG_APPKEY: "58ce080d9f06fd4738000e9f"])
         }
@@ -524,12 +554,16 @@ android {
             resValue "string", "app_name", "霹雳神兵"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "bool", "multiplayer", "true"
+
             addManifestPlaceholders([UMENG_APPKEY: "58ce0874aed1797d8600090e"])
         }
 
         renzheguigedou {
             resValue "string", "app_name", "忍者龟格斗"
             resValue "string", "app_type", "格斗对打"
+
+            resValue "bool", "multiplayer", "true"
 
             addManifestPlaceholders([UMENG_APPKEY: "58ce088945297d184200136e"])
         }
