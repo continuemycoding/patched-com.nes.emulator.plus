@@ -467,7 +467,7 @@ android {
             addManifestPlaceholders([UMENG_APPKEY: "58cd8274310c930d12000dce"])
         }
 
-        yuefeichuan {
+        yuefeizhuan {
             resValue "string", "app_name", "岳飞传"
             resValue "string", "app_type", "角色扮演"
 
