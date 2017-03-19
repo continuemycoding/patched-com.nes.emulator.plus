@@ -209,40 +209,6 @@ android {
     }
 
     productFlavors {
-//        GekikameNinjaDen {
-//            resValue "string", "app_name", "激龟忍者传"
-//            resValue "string", "app_type", "动作冒险"
-//        }
-//
-//        lubangsanshi {
-//            resValue "string", "app_name", "鲁邦三世"
-//            resValue "string", "app_type", "动作冒险"
-//        }
-//
-//        pilishenbing {
-//            resValue "string", "app_name", "霹雳神兵" //汉化版
-//            resValue "string", "app_type", "动作冒险"
-//        }
-//
-//        rzsggd {
-//            resValue "string", "app_name", "忍者神龟格斗"
-//            resValue "string", "app_type", "格斗对打"
-//        }
-//
-//        shangweimiling {
-//            resValue "string", "app_name", "上尉密令"
-//            resValue "string", "app_type", "动作冒险"
-//        }
-//
-//        shuihushenshou {
-//            resValue "string", "app_name", "水浒神兽"
-//            resValue "string", "app_type", "角色扮演"
-//        }
-//
-//        ThirtySixStratagems {
-//            resValue "string", "app_name", "三十六计"
-//            resValue "string", "app_type", "战略策略"
-//        }
 
         emulator {
             resValue "string", "app_name", "NES 模拟器"
@@ -538,6 +504,55 @@ android {
             resValue "string", "app_type", "动作冒险"
 
             addManifestPlaceholders([UMENG_APPKEY: "58ce0442c895766338000f14"])
+        }
+
+        shangweimiling {
+            resValue "string", "app_name", "上尉密令"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce080d9f06fd4738000e9f"])
+        }
+
+        lubangsanshi {
+            resValue "string", "app_name", "鲁邦三世"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce08424ad1562418001870"])
+        }
+
+        pilishenbing {
+            resValue "string", "app_name", "霹雳神兵"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce0874aed1797d8600090e"])
+        }
+
+        rzsggd {
+            resValue "string", "app_name", "忍者神龟格斗"
+            resValue "string", "app_type", "格斗对打"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce088945297d184200136e"])
+        }
+
+        shuihushenshou {
+            resValue "string", "app_name", "水浒神兽"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce08b2717c19129c001268"])
+        }
+
+        ThirtySixStratagems {
+            resValue "string", "app_name", "三十六计"
+            resValue "string", "app_type", "战略策略"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce08d0734be4022200137b"])
+        }
+
+        GekikameNinjaDen {
+            resValue "string", "app_name", "激龟忍者传"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce08e33eae256867001368"])
         }
     }
 
