@@ -2,11 +2,16 @@ package com.qiang.framework;
 
 import android.app.Activity;
 import android.app.Application;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import com.nostalgiaemulators.nesfull.NesFullApplication;
 import com.qiang.nes.BuildConfig;
 import com.umeng.analytics.game.UMGameAgent;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * Created by Administrator on 2017/2/18.
@@ -33,10 +38,41 @@ public class MyApplication extends NesFullApplication implements Application.Act
 
         instance = this;
 
+        try {
+            PackageInfo packageInfo = getPackageManager().getPackageInfo(getPackageName(), PackageManager.GET_SIGNATURES);
+
+            if(!getMD5MessageDigest(packageInfo.signatures[0].toByteArray()).equals("22a9e6616b5e7ea61b89cb8a42fba5e9"))
+                System.exit(0);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         UMGameAgent.init(this);
         UMGameAgent.setDebugMode(BuildConfig.DEBUG);
 
         registerActivityLifecycleCallbacks(this);
+    }
+
+    public static String getMD5MessageDigest(byte[] bytes) {
+        StringBuffer md5StringBuffer = new StringBuffer();
+        try {
+            MessageDigest messageDigest = MessageDigest.getInstance("MD5");
+            messageDigest.reset();
+            messageDigest.update(bytes);
+            byte[] digest = messageDigest.digest();
+            for (int i = 0; i < digest.length; i++) {
+                String hexString = Integer.toHexString(digest[i] & 0xff);
+
+                if (hexString.length() == 1)
+                    md5StringBuffer.append("0");
+
+                md5StringBuffer.append(hexString);
+            }
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return md5StringBuffer.toString();
     }
 
     @Override
