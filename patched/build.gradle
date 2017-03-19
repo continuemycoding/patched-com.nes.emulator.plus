@@ -588,6 +588,27 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58ce08e33eae256867001368"])
         }
+
+        shaonianyouxia {
+            resValue "string", "app_name", "少年游侠"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce591be88bad364400195b"])
+        }
+
+        fengshenbang {
+            resValue "string", "app_name", "封神榜"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce59de1c5dd060ac000a32"])
+        }
+
+        xianjiejingling {
+            resValue "string", "app_name", "仙界精灵"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58ce5b317f2c7404d0000272"])
+        }
     }
 
     productFlavors.all { productFlavor ->
