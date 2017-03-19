@@ -37,6 +37,16 @@ public class KeyboardProfile {
         localKeyboardProfile.keyMap.put(KeyEvent.KEYCODE_BUTTON_B, EmulatorController.KEY_B);
         localKeyboardProfile.keyMap.put(KeyEvent.KEYCODE_BUTTON_X, EmulatorController.KEY_A_TURBO);
         localKeyboardProfile.keyMap.put(KeyEvent.KEYCODE_BUTTON_Y, EmulatorController.KEY_B_TURBO);
+        localKeyboardProfile.keyMap.put(100000 + KeyEvent.KEYCODE_DPAD_UP, EmulatorController.KEY_UP);
+        localKeyboardProfile.keyMap.put(100000 + KeyEvent.KEYCODE_DPAD_DOWN, EmulatorController.KEY_DOWN);
+        localKeyboardProfile.keyMap.put(100000 + KeyEvent.KEYCODE_DPAD_LEFT, EmulatorController.KEY_LEFT);
+        localKeyboardProfile.keyMap.put(100000 + KeyEvent.KEYCODE_DPAD_RIGHT, EmulatorController.KEY_RIGHT);
+        localKeyboardProfile.keyMap.put(100000 + KeyEvent.KEYCODE_BUTTON_SELECT, EmulatorController.KEY_SELECT);
+        localKeyboardProfile.keyMap.put(100000 + KeyEvent.KEYCODE_BUTTON_START, EmulatorController.KEY_START);
+        localKeyboardProfile.keyMap.put(100000 + KeyEvent.KEYCODE_BUTTON_A, EmulatorController.KEY_A);
+        localKeyboardProfile.keyMap.put(100000 + KeyEvent.KEYCODE_BUTTON_B, EmulatorController.KEY_B);
+        localKeyboardProfile.keyMap.put(100000 + KeyEvent.KEYCODE_BUTTON_X, EmulatorController.KEY_A_TURBO);
+        localKeyboardProfile.keyMap.put(100000 + KeyEvent.KEYCODE_BUTTON_Y, EmulatorController.KEY_B_TURBO);
         return localKeyboardProfile;
     }
 
