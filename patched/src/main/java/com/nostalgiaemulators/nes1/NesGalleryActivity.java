@@ -51,7 +51,10 @@ public class NesGalleryActivity extends GalleryActivity{
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(!getPackageName().equals("com.qiang.nes.emulator"))
+        {
             finish();
+            System.exit(0);
+        }
     }
 
     @DexAdd

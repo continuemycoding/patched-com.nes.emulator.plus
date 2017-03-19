@@ -5,6 +5,7 @@ import android.app.Application;
 import android.os.Bundle;
 
 import com.nostalgiaemulators.nesfull.NesFullApplication;
+import com.qiang.nes.BuildConfig;
 import com.umeng.analytics.game.UMGameAgent;
 
 /**
@@ -32,13 +33,15 @@ public class MyApplication extends NesFullApplication implements Application.Act
 
         instance = this;
 
+        UMGameAgent.init(this);
+        UMGameAgent.setDebugMode(BuildConfig.DEBUG);
+
         registerActivityLifecycleCallbacks(this);
     }
 
     @Override
     public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
         currentActivity = activity;
-        UMGameAgent.init(activity);
     }
 
     @Override

@@ -87,5 +87,17 @@
         </activity>
         <activity android:screenOrientation="sensorLandscape" android:name="com.coderplus.filepicker.FilePickerActivity"/>
         <activity android:screenOrientation="sensorLandscape" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="org.acra.CrashReportDialog" android:theme="@android:style/Theme.Dialog"/>
+
+        <receiver android:name="com.qiang.framework.receiver.AppInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="UMENG_APPKEY" android:value="${UMENG_APPKEY}" />
+        <meta-data android:name="UMENG_CHANNEL" android:value="${UMENG_CHANNEL}"/>
+
     </application>
 </manifest>
