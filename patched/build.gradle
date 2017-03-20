@@ -614,6 +614,34 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58d0083cbbea83316a001219"])
         }
+
+        maoxiandao {
+            resValue "string", "app_name", "冒险岛"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58d01478e88bad3397001999"])
+        }
+
+        maoxiandao2 {
+            resValue "string", "app_name", "冒险岛2"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58d0148f4ad1567ec000178f"])
+        }
+
+        maoxiandao3 {
+            resValue "string", "app_name", "冒险岛3"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58d014acc62dca2ccb0024cc"])
+        }
+
+        maoxiandao4 {
+            resValue "string", "app_name", "冒险岛4"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58d014bf766613656800179d"])
+        }
     }
 
     productFlavors.all { productFlavor ->
