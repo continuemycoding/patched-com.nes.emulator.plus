@@ -607,6 +607,13 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58ce5b317f2c7404d0000272"])
         }
+
+        qibaoqimou {
+            resValue "string", "app_name", "七宝奇谋"
+            resValue "string", "app_type", "动作冒险"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58d0083cbbea83316a001219"])
+        }
     }
 
     productFlavors.all { productFlavor ->
