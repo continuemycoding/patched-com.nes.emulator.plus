@@ -5,6 +5,7 @@ import android.os.Bundle;
 import com.nostalgiaemulators.framework.Emulator;
 import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.base.GameMenu;
+import com.qiang.framework.helper.MetaDataHelper;
 import com.qiang.framework.helper.SystemHelper;
 import com.qiang.framework.recommend.RecommendManager;
 
@@ -27,7 +28,10 @@ public class NesEmulatorActivity extends EmulatorActivity {
     @Override
     public void onBackPressed()
     {
-        RecommendManager.showDialog(this);
+        if(MetaDataHelper.getString("UMENG_CHANNEL").equals("dangbei"))
+            RecommendManager.showDialog(this);
+        else
+            SystemHelper.showQuitDialog(this);
     }
 
     @DexIgnore
