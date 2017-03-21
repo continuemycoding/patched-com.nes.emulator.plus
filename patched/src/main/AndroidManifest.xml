@@ -9,6 +9,10 @@
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application android:allowBackup="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:name="com.qiang.framework.MyApplication" android:theme="@style/AppTheme">
         <meta-data android:name="svnversion" android:value="@string/svn_version"/>
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
@@ -98,6 +102,9 @@
 
         <meta-data android:name="UMENG_APPKEY" android:value="${UMENG_APPKEY}" />
         <meta-data android:name="UMENG_CHANNEL" android:value="${UMENG_CHANNEL}"/>
+
+        <meta-data android:name="DANGBEIAD_APPID" android:value="@string/DANGBEIAD_APPID"/>
+        <meta-data android:name="DANGBEIAD_APPKEY" android:value="@string/DANGBEIAD_APPKEY"/>
 
     </application>
 </manifest>

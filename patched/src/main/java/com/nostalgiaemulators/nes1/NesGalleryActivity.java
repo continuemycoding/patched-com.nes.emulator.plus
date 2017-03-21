@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
 
+import com.db.android.api.listener.AdListener;
 import com.nostalgiaemulators.framework.Emulator;
 import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.base.GameMenu;
 import com.nostalgiaemulators.framework.ui.gamegallery.GalleryActivity;
 import com.nostalgiaemulators.framework.ui.gamegallery.GameDescription;
+import com.qiang.framework.dangbeiad.SplashAdPlugin;
 import com.qiang.framework.helper.FileHelper;
 
 import java.io.File;
@@ -22,8 +24,11 @@ import lanchon.dexpatcher.annotation.DexIgnore;
  * Created by Administrator on 2017/3/16.
  */
 
-@DexEdit
+@DexEdit //(staticConstructorAction = DexAction.IGNORE)
 public class NesGalleryActivity extends GalleryActivity{
+
+    @DexAdd
+    boolean isAdOpening;
 
     @DexIgnore
     public NesGalleryActivity(){}
@@ -36,15 +41,47 @@ public class NesGalleryActivity extends GalleryActivity{
 
         if(!getPackageName().equals("com.qiang.nes.emulator"))
         {
-            String path = Environment.getDataDirectory() + "/data/" + getPackageName() + "/game.zip";
-            FileHelper.copyResource(this, com.qiang.nes.R.raw.game, path);
-
-            Intent intent = new Intent(this, NesEmulatorActivity.class);
-            intent.putExtra("game", new GameDescription(new File(path)));
-            intent.putExtra("slot", 0);
-            intent.putExtra("fromGallery", true);
-            startActivityForResult(intent, 0);
+            SplashAdPlugin.show(this, new SplashAdListener());
         }
+    }
+
+    @DexAdd
+    @Override
+    public void onBackPressed()
+    {
+        if(!isAdOpening)
+            super.onBackPressed();
+    }
+
+    class SplashAdListener extends AdListener
+    {
+        @Override
+        public void onAdOpened(boolean isSuccess) {
+            if (isSuccess) {
+                isAdOpening = true;
+            }else{
+                startNesEmulatorActivity();
+            }
+        }
+
+        @Override
+        public void onAdCloseed() {
+            isAdOpening = false;
+            startNesEmulatorActivity();
+        }
+    }
+
+    @DexAdd
+    void startNesEmulatorActivity()
+    {
+        String path = Environment.getDataDirectory() + "/data/" + getPackageName() + "/game.zip";
+        FileHelper.copyResource(this, com.qiang.nes.R.raw.game, path);
+
+        Intent intent = new Intent(this, NesEmulatorActivity.class);
+        intent.putExtra("game", new GameDescription(new File(path)));
+        intent.putExtra("slot", 0);
+        intent.putExtra("fromGallery", true);
+        startActivityForResult(intent, 0);
     }
 
     @DexAdd

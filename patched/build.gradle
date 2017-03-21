@@ -105,6 +105,9 @@ android {
 
         resValue "bool", "multiplayer", "false"
 
+        resValue "string", "DANGBEIAD_APPID", "dv2IHuXtV0xzxVEYFZ51sG/SM7zCN2sFKdqnbP3cQLc="
+        resValue "string", "DANGBEIAD_APPKEY", "E9851F713A692EA5"
+
         resValue "string", "add_logo", "false"
     }
 
@@ -159,6 +162,8 @@ android {
 //        }
 
         dangbei {
+            //debuggable true
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
@@ -236,7 +241,8 @@ android {
             resValue "string", "app_name", "兔八哥"
             resValue "string", "app_type", "动作冒险"
 
-            //resValue "string", "add_logo", "true"
+            resValue "string", "DANGBEIAD_APPID", "62GWBRa6ujySw4MWTYrTKEsJ4uMESVpsD69RTvgmbkH6c2aZ"
+            resValue "string", "DANGBEIAD_APPKEY", "00C0F89C0A092DDB"
 
             addManifestPlaceholders([UMENG_APPKEY: "58aadfeee88bad048f000860"])
         }
@@ -253,6 +259,9 @@ android {
 
             resValue "string", "button_a_visible", "true"
             resValue "string", "button_x_visible", "true"
+
+            resValue "string", "DANGBEIAD_APPID", "pu48YmQAfE9JXxRpG6mFWekY2NTDnEmEQfJdsZcmzr4ENEYf"
+            resValue "string", "DANGBEIAD_APPKEY", "F9F5D01E118B768C"
 
             addManifestPlaceholders([UMENG_APPKEY: "58ac6c327f2c741b19001b37"])
         }
@@ -311,6 +320,9 @@ android {
             resValue "string", "app_type", "动作冒险"
 
             resValue "bool", "multiplayer", "true"
+
+            resValue "string", "DANGBEIAD_APPID", "hkC3QZpc65awGGCum7Nz4JzqfJ5jDEBscG9CM6WzL45dNj5Q"
+            resValue "string", "DANGBEIAD_APPKEY", "BDADDA750705CA6F"
 
             addManifestPlaceholders([UMENG_APPKEY: "58b303c91061d21bcb000351"])
         }
@@ -642,6 +654,15 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58d014bf766613656800179d"])
         }
+
+        dangbeiaddemo {
+            applicationId "com"
+
+            resValue "string", "app_name", "当贝广告"
+            resValue "string", "app_type", ""
+
+            addManifestPlaceholders([UMENG_APPKEY: ""])
+        }
     }
 
     productFlavors.all { productFlavor ->
@@ -666,6 +687,7 @@ dependencies {
     // subproject. But the library could be produced by an independent project and imported
     // manually in Android Studio just like any other android library (aar) file.
     compile project(':source')
+    compile project(':DangBeiAd')
 
     // We import an Android library, a file chooser, just for fun. This pulls in all its
     // resources that will be transparently merged, like other resources from this project,

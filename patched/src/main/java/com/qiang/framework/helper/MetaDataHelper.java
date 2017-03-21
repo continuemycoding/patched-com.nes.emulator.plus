@@ -1,6 +1,7 @@
 package com.qiang.framework.helper;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -18,9 +19,9 @@ public class MetaDataHelper {
     static
     {
         try {
-            Activity activity = MyApplication.getCurrentActivity();
-            //ActivityInfo info = activity.getPackageManager().getActivityInfo(activity.getComponentName(), PackageManager.GET_META_DATA);
-            ApplicationInfo info = activity.getPackageManager().getApplicationInfo(activity.getPackageName(), PackageManager.GET_META_DATA);
+            Context context = MyApplication.getInstance();
+            //ActivityInfo info = context.getPackageManager().getActivityInfo(context.getComponentName(), PackageManager.GET_META_DATA);
+            ApplicationInfo info = context.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA);
             metaData = info.metaData;
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();

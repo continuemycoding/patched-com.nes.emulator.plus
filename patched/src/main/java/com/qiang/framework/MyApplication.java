@@ -6,7 +6,9 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 
+import com.db.android.api.AdSystem;
 import com.nostalgiaemulators.nesfull.NesFullApplication;
+import com.qiang.framework.helper.MetaDataHelper;
 import com.qiang.nes.BuildConfig;
 import com.umeng.analytics.game.UMGameAgent;
 
@@ -52,6 +54,10 @@ public class MyApplication extends NesFullApplication implements Application.Act
         UMGameAgent.setDebugMode(BuildConfig.DEBUG);
 
         registerActivityLifecycleCallbacks(this);
+
+        AdSystem.getInstance(this).init(MetaDataHelper.getString("DANGBEIAD_APPID"), MetaDataHelper.getString("DANGBEIAD_APPKEY"));
+
+        AdSystem.setLogState(com.qiang.framework.dangbeiad.BuildConfig.DEBUG);
     }
 
     public static String getMD5MessageDigest(byte[] bytes) {
