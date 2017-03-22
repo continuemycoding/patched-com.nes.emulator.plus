@@ -89,7 +89,7 @@ android {
         // You must set these fields to match or be compatible with the corresponding data
         // of the source app. (Data is displayed when the source apk library is built.)
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 25
         versionCode 142
         versionName "1.42"
 
@@ -697,6 +697,7 @@ dependencies {
     // manually in Android Studio just like any other android library (aar) file.
     compile project(':source')
     compile project(':DangBeiAd')
+    compile project(':YouMiAd')
 
     // We import an Android library, a file chooser, just for fun. This pulls in all its
     // resources that will be transparently merged, like other resources from this project,

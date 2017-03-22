@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.db.android.api.AdSystem;
 import com.nostalgiaemulators.nesfull.NesFullApplication;
 import com.qiang.framework.helper.MetaDataHelper;
+import com.qiang.framework.youmiad.SpotAdPlugin;
 import com.qiang.nes.BuildConfig;
 import com.umeng.analytics.game.UMGameAgent;
 
@@ -58,6 +59,8 @@ public class MyApplication extends NesFullApplication implements Application.Act
         AdSystem.getInstance(this).init(MetaDataHelper.getString("DANGBEIAD_APPID"), MetaDataHelper.getString("DANGBEIAD_APPKEY"));
 
         AdSystem.setLogState(com.qiang.framework.dangbeiad.BuildConfig.DEBUG);
+
+        SpotAdPlugin.init(this);
     }
 
     public static String getMD5MessageDigest(byte[] bytes) {
