@@ -279,6 +279,9 @@ android {
             resValue "string", "button_a_visible", "true"
             resValue "string", "button_x_visible", "true"
 
+            resValue "string", "DANGBEIAD_APPID", "xCgZtmMvbxvRrVPY8sTk4U3prjkeFgeuEmrmydLhyJyAuEvq"
+            resValue "string", "DANGBEIAD_APPKEY", "8962EC8EAF74630C"
+
             addManifestPlaceholders([UMENG_APPKEY: "58adb45df5ade417960015ba"])
         }
 
@@ -403,6 +406,9 @@ android {
             resValue "string", "app_name", "西游记"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "string", "DANGBEIAD_APPID", "7Rrm2CBfWLFwff8WgdN6mBs8spJGeXhavL7paxkKVMWenGvG"
+            resValue "string", "DANGBEIAD_APPKEY", "922A01B47E8EFF6C"
+
             addManifestPlaceholders([UMENG_APPKEY: "58b82f9e4ad1562c13001606"])
         }
 
@@ -445,6 +451,9 @@ android {
         sanmutongzi {
             resValue "string", "app_name", "三目童子"
             resValue "string", "app_type", "动作冒险"
+
+            resValue "string", "DANGBEIAD_APPID", "bh6wHfVtkCGCP8kKMy83W88MxTa4uJHszFGAJCp4vRH6FRLB"
+            resValue "string", "DANGBEIAD_APPKEY", "624D9FBA96B952CE"
 
             addManifestPlaceholders([UMENG_APPKEY: "58c7784bf5ade47765001294"])
         }
