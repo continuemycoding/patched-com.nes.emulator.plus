@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/DangBeiAd" />
+            <option value="$PROJECT_DIR$/YouMiAd" />
             <option value="$PROJECT_DIR$/patched" />
             <option value="$PROJECT_DIR$/source" />
           </set>
