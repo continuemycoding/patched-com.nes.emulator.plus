@@ -2,4 +2,46 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.qiang.framework.youmiad">
 
+    <!-- 视频组件 -->
+    <activity
+        android:name="net.youmi.android.normal.video.VideoActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+        android:resizeableActivity="false"
+        android:screenOrientation="landscape"
+        android:taskAffinity=""
+        android:theme="@android:style/Theme.NoTitleBar" >
+    </activity >
+
+    <!-- 其他组件 -->
+    <activity
+        android:name="net.youmi.android.AdBrowser"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout"
+        android:theme="@android:style/Theme.NoTitleBar" >
+    </activity >
+
+    <service
+        android:name="net.youmi.android.AdService"
+        android:exported="false" >
+    </service >
+
+    <receiver android:name="net.youmi.android.AdReceiver" >
+        <intent-filter >
+            <action android:name="android.intent.action.PACKAGE_ADDED" />
+            <action android:name="android.intent.action.PACKAGE_INSTALL" />
+
+            <data android:scheme="package" />
+        </intent-filter >
+    </receiver >
+
+    <!-- 有米SDK为了兼容Android N应用间共享文件行为变更而需要配置的FileProvider -->
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="com.youmi.android.addemo.fileProvider"
+        android:exported="false"
+        android:grantUriPermissions="true" >
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_provider" />
+    </provider >
+
 </manifest>

@@ -1,9 +1,7 @@
 package com.qiang.framework.youmiad;
 
 import android.content.Context;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.util.Log;
 
 import net.youmi.android.normal.common.ErrorCode;
 import net.youmi.android.normal.spot.SpotListener;
@@ -12,7 +10,10 @@ import net.youmi.android.normal.spot.SpotManager;
 //插屏广告
 public class SpotAdPlugin
 {
+	private static final String tag = "SpotAdPlugin";
+
 	public static void init(Context context) {
+
 		// 设置插屏图片类型，默认竖图
 		//		// 横图
 		//		SpotManager.getInstance(mContext).setImageType(SpotManager
@@ -37,75 +38,56 @@ public class SpotAdPlugin
 
 			@Override
 			public void onShowSuccess() {
-				//logInfo("插屏展示成功");
+				Log.i(tag, "插屏展示成功");
 			}
 
 			@Override
 			public void onShowFailed(int errorCode) {
-				//logError("插屏展示失败");
+				Log.e(tag, "插屏展示失败");
 				switch (errorCode) {
 					case ErrorCode.NON_NETWORK:
-						//showShortToast("网络异常");
+						Log.e(tag, "网络异常");
 						break;
 					case ErrorCode.NON_AD:
-						//showShortToast("暂无插屏广告");
+						Log.e(tag, "暂无插屏广告");
 						break;
 					case ErrorCode.RESOURCE_NOT_READY:
-						//showShortToast("插屏资源还没准备好");
+						Log.e(tag, "插屏资源还没准备好");
 						break;
 					case ErrorCode.SHOW_INTERVAL_LIMITED:
-						//showShortToast("请勿频繁展示");
+						Log.e(tag, "请勿频繁展示");
 						break;
 					case ErrorCode.WIDGET_NOT_IN_VISIBILITY_STATE:
-						//showShortToast("请设置插屏为可见状态");
+						Log.e(tag, "请设置插屏为可见状态");
 						break;
 					default:
-						//showShortToast("请稍后再试");
+						Log.e(tag, "请稍后再试");
 						break;
 				}
 			}
 
 			@Override
 			public void onSpotClosed() {
-				//logDebug("插屏被关闭");
+				Log.i(tag, "插屏被关闭");
 			}
 
 			@Override
 			public void onSpotClicked(boolean isWebPage) {
-				//logDebug("插屏被点击");
-				//logInfo("是否是网页广告？%s", isWebPage ? "是" : "不是");
+				Log.i(tag, "插屏被点击");
+				Log.i(tag, "是否是网页广告？  " + (isWebPage ? "是" : "不是"));
 			}
 		});
 	}
 
-//	@Override
-//	public void onBackPressed() {
-//		// 点击后退关闭插屏广告
-//		if (SpotManager.getInstance(mContext).isSpotShowing()) {
-//			SpotManager.getInstance(mContext).hideSpot();
-//		} else {
-//			super.onBackPressed();
-//		}
-//	}
-//
-//	@Override
-//	protected void onPause() {
-//		super.onPause();
-//		// 插屏广告
-//		SpotManager.getInstance(mContext).onPause();
-//	}
-//
-//	@Override
-//	protected void onStop() {
-//		super.onStop();
-//		// 插屏广告
-//		SpotManager.getInstance(mContext).onStop();
-//	}
-//
-//	@Override
-//	protected void onDestroy() {
-//		super.onDestroy();
-//		// 插屏广告
-//		SpotManager.getInstance(mContext).onDestroy();
-//	}
+	public boolean isShowing(Context context) {
+		return SpotManager.getInstance(context).isSpotShowing();
+	}
+
+	protected void hide(Context context) {
+		SpotManager.getInstance(context).hideSpot();
+	}
+
+	protected void destroy(Context context) {
+		SpotManager.getInstance(context).onDestroy();
+	}
 }
