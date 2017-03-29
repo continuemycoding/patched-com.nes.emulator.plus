@@ -1,6 +1,8 @@
 package com.nostalgiaemulators.framework.controllers;
 
 import android.content.Context;
+import android.view.InputDevice;
+import android.view.InputEvent;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -8,6 +10,7 @@ import android.view.View;
 import com.nostalgiaemulators.framework.Emulator;
 import com.nostalgiaemulators.framework.EmulatorController;
 import com.nostalgiaemulators.framework.ui.gamegallery.GameDescription;
+import com.qiang.framework.helper.MetaDataHelper;
 
 import lanchon.dexpatcher.annotation.*;
 
@@ -52,24 +55,28 @@ public class KeyboardController implements EmulatorController {
 
     class KeyboardView extends View {
 
-        int[] keys = new int[128];
-
         private int[] players = new int[2];
 
         public KeyboardView(Context context){
             super(context);
         }
 
-        private boolean isPlayer2(int deviceId)
+        private boolean isPlayer2(InputEvent event)
         {
+            if(!MetaDataHelper.getBoolean("multiplayer"))
+                return false;
+
+            if ((event.getSource() & InputDevice.SOURCE_JOYSTICK) == 0 && (event.getSource() & (InputDevice.SOURCE_GAMEPAD)) == 0)
+                return false;
+
             int playerIndex = -1;
 
             for(int i=0;i<players.length;i++)
             {
                 if(players[i] == 0)
-                    players[i] = deviceId;
+                    players[i] = event.getDeviceId();
 
-                if(players[i] == deviceId)
+                if(players[i] == event.getDeviceId())
                 {
                     playerIndex = i;
                     break;
@@ -85,7 +92,7 @@ public class KeyboardController implements EmulatorController {
             float xAxisValue = event.getAxisValue(MotionEvent.AXIS_X);
             float yAxisValue = event.getAxisValue(MotionEvent.AXIS_Y);
 
-            boolean isPlayer2 = isPlayer2(event.getDeviceId());
+            boolean isPlayer2 = isPlayer2(event);
 
             boolean processed = false;
 
@@ -135,7 +142,7 @@ public class KeyboardController implements EmulatorController {
             if(mapKey(keyCode) == 0)
                 return false;
 
-            setKeyPressed(isPlayer2(event.getDeviceId()), keyCode, true);
+            setKeyPressed(isPlayer2(event), keyCode, true);
 
             return true;
         }
@@ -146,7 +153,7 @@ public class KeyboardController implements EmulatorController {
             if(mapKey(keyCode) == 0)
                 return false;
 
-            setKeyPressed(isPlayer2(event.getDeviceId()), keyCode, false);
+            setKeyPressed(isPlayer2(event), keyCode, false);
 
             return true;
         }
