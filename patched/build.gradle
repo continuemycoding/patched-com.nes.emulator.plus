@@ -670,7 +670,7 @@ android {
             resValue "string", "app_name", "吞食天地"
             resValue "string", "app_type", "角色扮演"
 
-            addManifestPlaceholders([UMENG_APPKEY: "58db404ee88bad5c4b00068f"])
+            addManifestPlaceholders([UMENG_APPKEY: "58dbcc11ae1bf80e66000b2a"])
         }
 
         dangbeiaddemo {
