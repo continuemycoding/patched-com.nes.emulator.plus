@@ -1,40 +1,23 @@
 package com.nostalgiaemulators.framework.base;
 
-import android.annotation.SuppressLint;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.KeyEvent;
-import android.view.MotionEvent;
-
 import com.nostalgiaemulators.framework.Emulator;
 
-import lanchon.dexpatcher.annotation.DexAction;
-import lanchon.dexpatcher.annotation.DexAdd;
 import lanchon.dexpatcher.annotation.DexEdit;
 import lanchon.dexpatcher.annotation.DexIgnore;
-import lanchon.dexpatcher.annotation.DexRemove;
 import lanchon.dexpatcher.annotation.DexReplace;
 
 /**
  * Created by Administrator on 2017/3/16.
  */
 
-@DexEdit(defaultAction = DexAction.IGNORE)
+@DexEdit
 public abstract class EmulatorActivity extends ImmersiveActivity implements GameMenu.OnGameMenuListener{
 
+    @DexIgnore
     protected Manager manager;
 
-    @DexRemove
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        return false;
-    }
-
-    @DexRemove
-    @Override
-    public boolean onKeyUp(int keyCode, KeyEvent event) {
-        return false;
-    }
+    @DexIgnore
+    public EmulatorActivity(){}
 
     @DexIgnore
     public abstract Emulator getEmulatorInstance();
