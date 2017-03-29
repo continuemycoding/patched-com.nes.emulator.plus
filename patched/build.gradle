@@ -664,6 +664,13 @@ android {
             addManifestPlaceholders([UMENG_APPKEY: "58d014bf766613656800179d"])
         }
 
+        tunshitiandi {
+            resValue "string", "app_name", "吞食天地"
+            resValue "string", "app_type", "角色扮演"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58db404ee88bad5c4b00068f"])
+        }
+
         dangbeiaddemo {
             applicationId "com"
 
