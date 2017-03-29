@@ -121,6 +121,14 @@ android {
     }
 
     buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+            addManifestPlaceholders([UMENG_CHANNEL: name])
+        }
+
 //        qihoo {
 //            minifyEnabled false
 //            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -162,8 +170,6 @@ android {
 //        }
 
         dangbei {
-            //debuggable true
-
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
@@ -172,8 +178,6 @@ android {
         }
 
 //        qipo {
-//            //debuggable true
-//
 //            minifyEnabled false
 //            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 //            signingConfig signingConfigs.release
@@ -182,8 +186,6 @@ android {
 //        }
 
         weijing {
-            //debuggable true
-
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
