@@ -5,6 +5,7 @@ import android.os.Bundle;
 import com.nostalgiaemulators.framework.Emulator;
 import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.base.GameMenu;
+import com.qiang.framework.dangbeiupdate.UpdatePlugin;
 import com.qiang.framework.helper.MetaDataHelper;
 import com.qiang.framework.helper.SystemHelper;
 import com.qiang.framework.recommend.RecommendManager;
@@ -23,6 +24,14 @@ public class NesEmulatorActivity extends EmulatorActivity {
 
     @DexIgnore
     public NesEmulatorActivity(){}
+
+    @DexAdd
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        UpdatePlugin.start(this);
+    }
 
     @DexAdd
     @Override
