@@ -2,18 +2,15 @@ package com.nostalgiaemulators.nes1;
 
 import android.os.Bundle;
 
-import com.nostalgiaemulators.framework.Emulator;
-import com.nostalgiaemulators.framework.base.EmulatorActivity;
-import com.nostalgiaemulators.framework.base.GameMenu;
-import com.qiang.framework.dangbeiupdate.UpdatePlugin;
-import com.qiang.framework.helper.MetaDataHelper;
-import com.qiang.framework.helper.SystemHelper;
-import com.qiang.framework.recommend.RecommendManager;
+import com.nostalgiaemulators.framework.*;
+import com.nostalgiaemulators.framework.base.*;
+import com.qiang.framework.helper.*;
+import com.qiang.framework.listener.*;
+import com.qiang.framework.recommend.*;
+import com.qiang.framework.dangbeiupdate.*;
+import com.qiang.nes.BuildConfig;
 
-import lanchon.dexpatcher.annotation.DexAdd;
-import lanchon.dexpatcher.annotation.DexEdit;
-import lanchon.dexpatcher.annotation.DexIgnore;
-import lanchon.dexpatcher.annotation.DexReplace;
+import lanchon.dexpatcher.annotation.*;
 
 /**
  * Created by Administrator on 2017/3/15.
@@ -30,14 +27,27 @@ public class NesEmulatorActivity extends EmulatorActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        UpdatePlugin.start(this);
+        UpdatePlugin.start(this, new MyUpdateManagerListener());
+    }
+
+    class MyUpdateManagerListener implements UpdateManagerListener
+    {
+        @Override
+        public void onNoUpdateAvailable() {
+
+        }
+
+        @Override
+        public void onUpdateAvailable(Product product) {
+            UpdateManager.start(NesEmulatorActivity.this);
+        }
     }
 
     @DexAdd
     @Override
     public void onBackPressed()
     {
-        if(MetaDataHelper.getString("UMENG_CHANNEL").equals("dangbei"))
+        if(BuildConfig.DEBUG || MetaDataHelper.getString("UMENG_CHANNEL").equals("dangbei"))
             RecommendManager.showDialog(this);
         else
             SystemHelper.showQuitDialog(this);
