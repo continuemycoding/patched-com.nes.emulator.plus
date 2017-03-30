@@ -698,9 +698,10 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.umeng.analytics:analytics:latest.integration'
 
     compile project(':source')
-    compile project(':DangBeiAd')
+    compile project(':framework')
+    debugCompile project(':DangBeiAd')
+    dangbeiCompile project(':DangBeiAd')
     compile project(':YouMiAd')
 }
