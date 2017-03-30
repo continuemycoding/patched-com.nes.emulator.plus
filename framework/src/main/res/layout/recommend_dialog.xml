@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/darker_gray" android:padding="1.0px" android:layout_width="640.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:id="@+id/recommend_dialog_title" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <Button android:id="@+id/recommend_dialog_image" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_margin="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="1.0dip">
+        <Button android:textSize="18.0sp" android:id="@+id/recommend_dialog_confirm" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0" />
+        <Button android:textSize="18.0sp" android:id="@+id/recommend_dialog_cancel" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>
