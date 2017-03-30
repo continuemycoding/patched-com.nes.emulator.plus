@@ -700,8 +700,8 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     compile project(':source')
-    compile project(':framework')
-    debugCompile project(':DangBeiAd')
-    dangbeiCompile project(':DangBeiAd')
-    compile project(':YouMiAd')
+    compile project(':modules:framework')
+    debugCompile project(':modules:DangBeiAd')
+    dangbeiCompile project(':modules:DangBeiAd')
+    compile project(':modules:YouMiAd')
 }

@@ -1,1 +1,1 @@
-include ':source', ':patched', ':framework', ':DangBeiAd', ':YouMiAd'
+include ':source', ':patched', ':modules:framework', ':modules:DangBeiAd', ':modules:YouMiAd'
