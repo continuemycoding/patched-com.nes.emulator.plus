@@ -655,12 +655,18 @@ android {
             resValue "string", "app_name", "冒险岛2"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "string", "DANGBEIAD_APPID", "yTYqEL3pQdq6FWFVbuVvU9xeT5SZwsY8W6rnrVWrsng4v4mv"
+            resValue "string", "DANGBEIAD_APPKEY", "3D1C635A31E35840"
+
             addManifestPlaceholders([UMENG_APPKEY: "58d0148f4ad1567ec000178f"])
         }
 
         maoxiandao3 {
             resValue "string", "app_name", "冒险岛3"
             resValue "string", "app_type", "动作冒险"
+
+            resValue "string", "DANGBEIAD_APPID", "PwLMS7KEemTmDdjjEKgEeSHJ4RgAX5J7FjCfTq4SQtadh965"
+            resValue "string", "DANGBEIAD_APPKEY", "F4464D6CDE13F684"
 
             addManifestPlaceholders([UMENG_APPKEY: "58d014acc62dca2ccb0024cc"])
         }
