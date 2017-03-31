@@ -14,3 +14,7 @@ gradlew clean ^
         :patched:assembleXiaoaojianghuDangbei ^
         :patched:assembleTubageDangbei ^
         :patched:assembleKuaidaxuanfengDangbei ^
+        :patched:assembleXiyoujiDangbei ^
+        :patched:assembleSanmutongziDangbei ^
+        :patched:assembleMaoxiandao2Dangbei ^
+        :patched:assembleMaoxiandao3Dangbei ^
