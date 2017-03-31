@@ -66,7 +66,7 @@ public class KeyboardController implements EmulatorController {
             if(!MetaDataHelper.getBoolean("multiplayer"))
                 return false;
 
-            if ((event.getSource() & InputDevice.SOURCE_JOYSTICK) == 0 && (event.getSource() & (InputDevice.SOURCE_GAMEPAD)) == 0)
+            if ((event.getDevice().getSources() & InputDevice.SOURCE_JOYSTICK) == 0 || (event.getDevice().getSources() & (InputDevice.SOURCE_GAMEPAD)) == 0)
                 return false;
 
             int playerIndex = -1;
@@ -139,6 +139,9 @@ public class KeyboardController implements EmulatorController {
         @Override
         public boolean onKeyDown(int keyCode, KeyEvent event)
         {
+            if(keyCode == KeyEvent.KEYCODE_DPAD_CENTER)
+                keyCode = KeyEvent.KEYCODE_A;
+
             if(mapKey(keyCode) == 0)
                 return false;
 
