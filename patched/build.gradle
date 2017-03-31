@@ -385,6 +385,9 @@ android {
 
             resValue "bool", "multiplayer", "true"
 
+            resValue "string", "DANGBEIAD_APPID", "8S4JVMVk9n83wVAqVTyqqtFfbqDjykm8yDJZEvaX8FWGk6kj"
+            resValue "string", "DANGBEIAD_APPKEY", "364BFA23799E908A"
+
             addManifestPlaceholders([UMENG_APPKEY: "58b82947a40fa33549000525"])
         }
 
@@ -393,6 +396,9 @@ android {
             resValue "string", "app_type", "动作冒险"
 
             resValue "bool", "multiplayer", "true"
+
+            resValue "string", "DANGBEIAD_APPID", "nmEh7WmZd4wZZMzVWPxjvwnNs4QNGPVFnppWCXAcvLHUQw6a"
+            resValue "string", "DANGBEIAD_APPKEY", "009EC1EA6332A3E7"
 
             addManifestPlaceholders([UMENG_APPKEY: "58b82998717c191595001160"])
         }
@@ -704,4 +710,5 @@ dependencies {
     debugCompile project(':modules:DangBeiAd')
     dangbeiCompile project(':modules:DangBeiAd')
     compile project(':modules:YouMiAd')
+    compile project(path: ':modules:DangBeiUpdate')
 }
