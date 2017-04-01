@@ -339,6 +339,9 @@ android {
             resValue "string", "app_name", "超级玛丽2"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "string", "DANGBEIAD_APPID", "YBgqweDxtF6L7GTvHjeABZmpvBYgerHgTtdYAHTzrjLbtLX4"
+            resValue "string", "DANGBEIAD_APPKEY", "9CB6220812FEE6F9"
+
             addManifestPlaceholders([UMENG_APPKEY: "58b30767bbea83778f001606"])
         }
 
@@ -348,6 +351,9 @@ android {
 
             resValue "string", "app_name", "超级玛丽3"
             resValue "string", "app_type", "动作冒险"
+
+            resValue "string", "DANGBEIAD_APPID", "6PTTs2wZhRQQdWkpMKeJyb7XpDdwcEwsNEqaav5ShWxBeDGZ"
+            resValue "string", "DANGBEIAD_APPKEY", "2224DB5934D9DAA4"
 
             addManifestPlaceholders([UMENG_APPKEY: "58b307393eae256adb00044e"])
         }
