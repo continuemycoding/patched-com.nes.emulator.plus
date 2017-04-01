@@ -154,5 +154,53 @@
     "url": "http://app.znds.com/down/20170320/ml3_1.4_dangbei.apk",
     "releaseNote": "1.完善用户使用体验；\r\n2.修复已知BUG。",
     "piclist": "http://img.znds.com/uploads/new/170302/9-1F302103Z1620.jpg,http://img.znds.com/uploads/new/170302/9-1F302103ZOE.jpg,http://img.znds.com/uploads/new/170302/9-1F302103915618.jpg,http://img.znds.com/uploads/new/170302/9-1F302103924G2.jpg"
+  },
+  {
+    "recommend": true,
+    "name": "双截龙2",
+    "packageName": "com.qiang.nes.shuangjielong2",
+    "dangbei_appId": 5326,
+    "versionName": "1.50",
+    "versionCode": 150,
+    "appcode": 0,
+    "url": "http://app.znds.com/down/20170331/sjl2_1.50_dangbei.apk",
+    "releaseNote": "1.添加存档功能；\r\n2.修复双人手柄支持问题。",
+    "piclist": "http://img.znds.com/uploads/new/170310/9-1F310101231F6.jpg,http://img.znds.com/uploads/new/170310/9-1F310101242501.jpg,http://img.znds.com/uploads/new/170310/9-1F310101249D7.jpg,http://img.znds.com/uploads/new/170310/9-1F31010125Y45.jpg"
+  },
+  {
+    "recommend": true,
+    "name": "双截龙3",
+    "packageName": "com.qiang.nes.shuangjielong3",
+    "dangbei_appId": 5327,
+    "versionName": "1.50",
+    "versionCode": 150,
+    "appcode": 0,
+    "url": "http://app.znds.com/down/20170331/sjl3_1.50_dangbei.apk",
+    "releaseNote": "1.添加存档功能；\r\n2.修复双人手柄支持问题。",
+    "piclist": "http://img.znds.com/uploads/new/170310/9-1F31010201L33.jpg,http://img.znds.com/uploads/new/170310/9-1F310102024E8.jpg,http://img.znds.com/uploads/new/170310/9-1F310102031111.jpg,http://img.znds.com/uploads/new/170310/9-1F31010203T62.jpg"
+  },
+  {
+    "recommend": true,
+    "name": "冒险岛2",
+    "packageName": "com.qiang.nes.maoxiandao2",
+    "dangbei_appId": 5359,
+    "versionName": "1.50",
+    "versionCode": 150,
+    "appcode": 0,
+    "url": "http://app.znds.com/down/20170401/mxd_1.50_dangbei.apk",
+    "releaseNote": "1.添加存档功能；\r\n2.修复双人手柄支持问题。",
+    "piclist": "http://img.znds.com/uploads/new/170321/9-1F321140Z4193.jpg,http://img.znds.com/uploads/new/170321/9-1F321140912915.jpg,http://img.znds.com/uploads/new/170321/9-1F321140920412.jpg,http://img.znds.com/uploads/new/170321/9-1F32114092S62.jpg"
+  },
+  {
+    "recommend": true,
+    "name": "冒险岛3",
+    "packageName": "com.qiang.nes.maoxiandao3",
+    "dangbei_appId": 5360,
+    "versionName": "1.50",
+    "versionCode": 150,
+    "appcode": 0,
+    "url": "http://app.znds.com/down/20170401/mxd3_1.50_dangbei.apk",
+    "releaseNote": "1.添加存档功能；\r\n2.修复双人手柄支持问题。",
+    "piclist": "http://img.znds.com/uploads/new/170321/9-1F321142004S0.jpg,http://img.znds.com/uploads/new/170321/9-1F321142013561.jpg,http://img.znds.com/uploads/new/170321/9-1F321142022I9.jpg,http://img.znds.com/uploads/new/170321/9-1F321142031542.jpg,http://img.znds.com/uploads/new/170321/9-1F321142040245.jpg"
   }
 ]
