@@ -105,8 +105,11 @@ android {
 
         resValue "bool", "multiplayer", "false"
 
-        resValue "string", "DANGBEIAD_APPID", "dv2IHuXtV0xzxVEYFZ51sG/SM7zCN2sFKdqnbP3cQLc="
-        resValue "string", "DANGBEIAD_APPKEY", "E9851F713A692EA5"
+        resValue "string", "DANGBEIAD_APPID", ""
+        resValue "string", "DANGBEIAD_APPKEY", ""
+
+        resValue "string", "YOUMI_APPID", ""
+        resValue "string", "YOUMI_APPKEY", ""
 
         resValue "string", "add_logo", "false"
     }
@@ -240,6 +243,9 @@ android {
             resValue "string", "DANGBEIAD_APPID", "62GWBRa6ujySw4MWTYrTKEsJ4uMESVpsD69RTvgmbkH6c2aZ"
             resValue "string", "DANGBEIAD_APPKEY", "00C0F89C0A092DDB"
 
+            resValue "string", "YOUMI_APPID", "2ac3db0535af84bd"
+            resValue "string", "YOUMI_APPKEY", "5b220e6098c10f4f"
+
             addManifestPlaceholders([UMENG_APPKEY: "58aadfeee88bad048f000860"])
         }
 
@@ -256,6 +262,9 @@ android {
             resValue "string", "DANGBEIAD_APPID", "pu48YmQAfE9JXxRpG6mFWekY2NTDnEmEQfJdsZcmzr4ENEYf"
             resValue "string", "DANGBEIAD_APPKEY", "F9F5D01E118B768C"
 
+            resValue "string", "YOUMI_APPID", "a187c8774d66acfa"
+            resValue "string", "YOUMI_APPKEY", "17e3ee15fb4cf525"
+
             addManifestPlaceholders([UMENG_APPKEY: "58ac6c327f2c741b19001b37"])
         }
 
@@ -271,6 +280,9 @@ android {
 
             resValue "string", "DANGBEIAD_APPID", "xCgZtmMvbxvRrVPY8sTk4U3prjkeFgeuEmrmydLhyJyAuEvq"
             resValue "string", "DANGBEIAD_APPKEY", "8962EC8EAF74630C"
+
+            resValue "string", "YOUMI_APPID", "ae99b68ef9cb2b8c"
+            resValue "string", "YOUMI_APPKEY", "1c25e248d75ab6de"
 
             addManifestPlaceholders([UMENG_APPKEY: "58adb45df5ade417960015ba"])
         }

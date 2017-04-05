@@ -111,5 +111,8 @@
         <meta-data android:name="DANGBEIAD_APPID" android:value="@string/DANGBEIAD_APPID"/>
         <meta-data android:name="DANGBEIAD_APPKEY" android:value="@string/DANGBEIAD_APPKEY"/>
 
+        <meta-data android:name="YOUMI_APPID" android:value="@string/YOUMI_APPID"/>
+        <meta-data android:name="YOUMI_APPKEY" android:value="@string/YOUMI_APPKEY"/>
+
     </application>
 </manifest>

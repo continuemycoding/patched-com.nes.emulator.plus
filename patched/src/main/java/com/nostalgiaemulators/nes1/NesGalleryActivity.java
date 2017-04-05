@@ -10,8 +10,12 @@ import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.base.GameMenu;
 import com.nostalgiaemulators.framework.ui.gamegallery.GalleryActivity;
 import com.nostalgiaemulators.framework.ui.gamegallery.GameDescription;
+import com.qiang.framework.BuildConfig;
 import com.qiang.framework.dangbeiad.SplashAdPlugin;
 import com.qiang.framework.helper.FileHelper;
+import com.qiang.framework.helper.MetaDataHelper;
+
+import net.youmi.android.AdManager;
 
 import java.io.File;
 import java.util.Set;
@@ -35,9 +39,11 @@ public class NesGalleryActivity extends GalleryActivity{
 
     @DexAdd
     @Override
-    public void onCreate(Bundle savedInstanceState)
+    protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+
+        AdManager.getInstance(this).init(MetaDataHelper.getString("YOUMI_APPID"), MetaDataHelper.getString("YOUMI_APPKEY"), MetaDataHelper.getString("UMENG_CHANNEL").equals("youmi"), BuildConfig.DEBUG);
 
         if(!getPackageName().equals("com.qiang.nes.emulator"))
         {
