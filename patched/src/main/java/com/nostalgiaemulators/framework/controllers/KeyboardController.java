@@ -9,7 +9,9 @@ import android.view.View;
 
 import com.nostalgiaemulators.framework.Emulator;
 import com.nostalgiaemulators.framework.EmulatorController;
+import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.ui.gamegallery.GameDescription;
+import com.qiang.framework.MyApplication;
 import com.qiang.framework.helper.MetaDataHelper;
 
 import lanchon.dexpatcher.annotation.*;
@@ -24,6 +26,8 @@ public class KeyboardController implements EmulatorController {
     private Emulator emulator;
 
     private Context context;
+
+    private EmulatorActivity emulatorActivity;
 
     @DexAdd
     public int mapKey(int keyCode)
@@ -86,6 +90,12 @@ public class KeyboardController implements EmulatorController {
             return playerIndex == 1;
         }
 
+        public void hideTouchController()
+        {
+            //emulatorActivity.hideTouchController();
+            ((EmulatorActivity)MyApplication.getCurrentActivity()).hideTouchController();
+        }
+
         @Override
         public boolean onGenericMotionEvent(MotionEvent event)
         {
@@ -131,7 +141,10 @@ public class KeyboardController implements EmulatorController {
             }
 
             if(processed)
+            {
+                hideTouchController();
                 return true;
+            }
 
             return super.onGenericMotionEvent(event);
         }
@@ -146,6 +159,8 @@ public class KeyboardController implements EmulatorController {
                 return false;
 
             setKeyPressed(isPlayer2(event), keyCode, true);
+
+            hideTouchController();
 
             return true;
         }

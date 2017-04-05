@@ -21,8 +21,6 @@ public abstract class EmulatorActivity extends ImmersiveActivity implements Game
 
     protected Manager manager;
 
-    private TouchController touchController;
-
     @DexEdit(target = "onCreate")
     protected void source_onCreate(Bundle savedInstanceState){}
 
@@ -32,7 +30,7 @@ public abstract class EmulatorActivity extends ImmersiveActivity implements Game
     protected void onCreate(Bundle savedInstanceState) {
         source_onCreate(savedInstanceState);
 
-        touchController.hide();
+        hideTouchController();
     }
 
     public abstract Emulator getEmulatorInstance();
@@ -48,6 +46,10 @@ public abstract class EmulatorActivity extends ImmersiveActivity implements Game
     @DexReplace
     public void quickSave(){
         manager.saveState(10);
+    }
+
+    public void hideTouchController() {
+
     }
 
     @Override
