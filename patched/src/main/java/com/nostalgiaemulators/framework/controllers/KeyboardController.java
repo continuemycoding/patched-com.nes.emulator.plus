@@ -153,7 +153,7 @@ public class KeyboardController implements EmulatorController {
         public boolean onKeyDown(int keyCode, KeyEvent event)
         {
             if(keyCode == KeyEvent.KEYCODE_DPAD_CENTER)
-                keyCode = KeyEvent.KEYCODE_A;
+                keyCode = KeyEvent.KEYCODE_BUTTON_A;
 
             if(mapKey(keyCode) == 0)
                 return false;
@@ -168,6 +168,9 @@ public class KeyboardController implements EmulatorController {
         @Override
         public boolean onKeyUp(int keyCode, KeyEvent event)
         {
+            if(keyCode == KeyEvent.KEYCODE_DPAD_CENTER)
+                keyCode = KeyEvent.KEYCODE_BUTTON_A;
+
             if(mapKey(keyCode) == 0)
                 return false;
 
