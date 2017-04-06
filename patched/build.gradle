@@ -233,6 +233,9 @@ android {
             resValue "string", "app_name", "笑傲江湖"
             resValue "string", "app_type", "角色扮演"
 
+            resValue "string", "DANGBEIAD_APPID", "RV82cM5A3dUJmpvYACzAFb2MYzP7SZwPYUwewDjvvzhSEygP"
+            resValue "string", "DANGBEIAD_APPKEY", "E3526DEB56F8C6A9"
+
             addManifestPlaceholders([UMENG_APPKEY: "58aa733d1c5dd059600003ef"])
         }
 
@@ -307,6 +310,9 @@ android {
         renzhemao {
             resValue "string", "app_name", "忍者猫9合1"
             resValue "string", "app_type", "动作冒险"
+
+            resValue "string", "DANGBEIAD_APPID", "mSE9A5gP6v2uUS6nrRJRgLp6MFJwxHQ2BQXwuwZjBUU6NNj4"
+            resValue "string", "DANGBEIAD_APPKEY", "6A9DD2B879C54F50"
 
             addManifestPlaceholders([UMENG_APPKEY: "58af0ae765b6d67f0d0009a5"])
         }
