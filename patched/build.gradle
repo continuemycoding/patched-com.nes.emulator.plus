@@ -203,7 +203,7 @@ android {
 
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
-            String outputFileName = variant.applicationId + "-" + variant.versionName + "@" + variant.versionCode + "-" + (variant.buildType.name) + ".apk"
+            String outputFileName = variant.applicationId + "-" + variant.versionName + "-" + (variant.buildType.name) + ".apk"
             output.outputFile = new File(output.outputFile.parentFile, outputFileName);
         }
 
@@ -288,12 +288,18 @@ android {
             resValue "string", "app_name", "忍者龙剑传2"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "string", "DANGBEIAD_APPID", "7knTXejpqfL4rmYH9qxXRDYX7pW3srgutqUL6ywCVKA8QAmv"
+            resValue "string", "DANGBEIAD_APPKEY", "7FF4774051BCE921"
+
             addManifestPlaceholders([UMENG_APPKEY: "58af0772766613614f0007ad"])
         }
 
         renzhelongjianzhuan3 {
             resValue "string", "app_name", "忍者龙剑传3"
             resValue "string", "app_type", "动作冒险"
+
+            resValue "string", "DANGBEIAD_APPID", "59x25aw2yYgy9qkbAtYV9xEPSApm6RHV363wFCUn6BuDqFpF"
+            resValue "string", "DANGBEIAD_APPKEY", "2A04370F02F8FA2B"
 
             addManifestPlaceholders([UMENG_APPKEY: "58af0794e88bad644700054e"])
         }
@@ -343,6 +349,9 @@ android {
 
             resValue "bool", "multiplayer", "true"
 
+            resValue "string", "DANGBEIAD_APPID", "xCWdG2fLjr2hpKUMeZw9nM2hzKGgNZds3BeEZN9283ekvyDQ"
+            resValue "string", "DANGBEIAD_APPKEY", "7B99A44D1AC92CEB"
+
             addManifestPlaceholders([UMENG_APPKEY: "58b4182c677baa4d9600115f"])
         }
 
@@ -352,6 +361,9 @@ android {
 
             resValue "bool", "multiplayer", "true"
 
+            resValue "string", "DANGBEIAD_APPID", "Fjxt3rdp4CbnMvGJDpbp8DnspepYhzLDj6H3VBMqsMHsBBer"
+            resValue "string", "DANGBEIAD_APPKEY", "05FB0B73748572FA"
+
             addManifestPlaceholders([UMENG_APPKEY: "58b41873e88bad70ad0024f9"])
         }
 
@@ -360,6 +372,9 @@ android {
             resValue "string", "app_type", "飞行射击"
 
             resValue "bool", "multiplayer", "true"
+
+            resValue "string", "DANGBEIAD_APPID", "HeXYDXcm4SKcTnQWjyHWrjmhpShG6hCN6dkcXxDRB8xZPpzw"
+            resValue "string", "DANGBEIAD_APPKEY", "B4FE4037F14713E5"
 
             addManifestPlaceholders([UMENG_APPKEY: "58b42e6a07fe652de8001fa6"])
         }
