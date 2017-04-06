@@ -15,8 +15,6 @@ import com.qiang.framework.dangbeiad.SplashAdPlugin;
 import com.qiang.framework.helper.FileHelper;
 import com.qiang.framework.helper.MetaDataHelper;
 
-import net.youmi.android.AdManager;
-
 import java.io.File;
 import java.util.Set;
 
@@ -43,7 +41,7 @@ public class NesGalleryActivity extends GalleryActivity{
     {
         super.onCreate(savedInstanceState);
 
-        AdManager.getInstance(this).init(MetaDataHelper.getString("YOUMI_APPID"), MetaDataHelper.getString("YOUMI_APPKEY"), false, BuildConfig.DEBUG || MetaDataHelper.getString("UMENG_CHANNEL").equals("youmi"));
+        //AdManager.getInstance(this).init(MetaDataHelper.getString("YOUMI_APPID"), MetaDataHelper.getString("YOUMI_APPKEY"), false, BuildConfig.DEBUG || MetaDataHelper.getString("UMENG_CHANNEL").equals("youmi"));
 
         if(!getPackageName().equals("com.qiang.nes.emulator"))
         {

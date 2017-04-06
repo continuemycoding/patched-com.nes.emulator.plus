@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.nostalgiaemulators.framework.remote.ControllableActivity;
-import com.qiang.framework.youmiad.BannerAdPlugin;
 
 import lanchon.dexpatcher.annotation.DexAction;
 import lanchon.dexpatcher.annotation.DexAdd;
@@ -27,7 +26,7 @@ public class SlotSelectionActivity extends ControllableActivity {
     protected void onCreate(Bundle savedInstanceState){
         source_onCreate(savedInstanceState);
 
-        BannerAdPlugin.init(this);
+        //BannerAdPlugin.init(this);
     }
 
     @DexReplace
@@ -36,6 +35,6 @@ public class SlotSelectionActivity extends ControllableActivity {
     {
         super.onDestroy();
 
-        BannerAdPlugin.destroy();
+        //BannerAdPlugin.destroy();
     }
 }
