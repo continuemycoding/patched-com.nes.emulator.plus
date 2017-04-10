@@ -3,7 +3,7 @@ package com.nostalgiaemulators.framework;
 import com.db.android.api.AdSystem;
 import com.nostalgiaemulators.framework.utils.Log;
 import com.qiang.framework.MyApplication;
-import com.qiang.framework.helper.MetaDataHelper;
+import com.qiang.framework.helpers.MetaDataHelper;
 import com.qiang.nes.BuildConfig;
 
 import lanchon.dexpatcher.annotation.DexAction;

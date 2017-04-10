@@ -10,10 +10,8 @@ import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.base.GameMenu;
 import com.nostalgiaemulators.framework.ui.gamegallery.GalleryActivity;
 import com.nostalgiaemulators.framework.ui.gamegallery.GameDescription;
-import com.qiang.framework.BuildConfig;
 import com.qiang.framework.dangbeiad.SplashAdPlugin;
-import com.qiang.framework.helper.FileHelper;
-import com.qiang.framework.helper.MetaDataHelper;
+import com.qiang.framework.helpers.FileHelper;
 
 import java.io.File;
 import java.util.Set;

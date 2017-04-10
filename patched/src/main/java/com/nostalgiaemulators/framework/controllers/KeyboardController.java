@@ -12,7 +12,7 @@ import com.nostalgiaemulators.framework.EmulatorController;
 import com.nostalgiaemulators.framework.base.EmulatorActivity;
 import com.nostalgiaemulators.framework.ui.gamegallery.GameDescription;
 import com.qiang.framework.MyApplication;
-import com.qiang.framework.helper.MetaDataHelper;
+import com.qiang.framework.helpers.MetaDataHelper;
 
 import lanchon.dexpatcher.annotation.*;
 

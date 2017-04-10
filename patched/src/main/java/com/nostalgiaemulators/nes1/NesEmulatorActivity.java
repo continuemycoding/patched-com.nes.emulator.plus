@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.nostalgiaemulators.framework.*;
 import com.nostalgiaemulators.framework.base.*;
-import com.qiang.framework.helper.*;
+import com.qiang.framework.helpers.*;
 import com.qiang.framework.listener.*;
 import com.qiang.framework.recommend.*;
 import com.qiang.framework.dangbeiupdate.*;
