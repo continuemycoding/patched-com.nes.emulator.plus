@@ -20,7 +20,7 @@ import java.util.Comparator;
  */
 public class ProductManager
 {
-    private static final String jsonPath = "app/src/main/assets/product.json";
+    private static final String jsonPath = "patched/src/main/assets/product.json";
 
     private static Product[] products;
 
@@ -75,7 +75,7 @@ public class ProductManager
         {
             Product product = products[i];
 
-            String path = "view_" + product.dangbei_appId;
+            String path = "productManager/build/view_" + product.dangbei_appId;
 
             download("http://api.dangbei.net/dbapinew/view_app.php?id=" + product.dangbei_appId, path);
 
