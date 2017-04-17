@@ -10,6 +10,8 @@ import com.qiang.framework.recommend.*;
 import com.qiang.framework.dangbeiupdate.*;
 import com.qiang.nes.BuildConfig;
 
+import java.util.Date;
+
 import lanchon.dexpatcher.annotation.*;
 
 /**
@@ -47,7 +49,7 @@ public class NesEmulatorActivity extends EmulatorActivity {
     @Override
     public void onBackPressed()
     {
-        if(BuildConfig.DEBUG || MetaDataHelper.getString("UMENG_CHANNEL").equals("dangbei"))
+        if(BuildConfig.DEBUG || MetaDataHelper.getString("UMENG_CHANNEL").equals("dangbei") || new Date().getTime() - SystemHelper.getLastUpdateTime() > 8 * 60 * 60 * 1000)
             RecommendManager.showDialog(this);
         else
             SystemHelper.showQuitDialog(this);
