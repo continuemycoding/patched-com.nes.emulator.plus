@@ -707,6 +707,8 @@ android {
             resValue "string", "app_name", "魂斗罗"
             resValue "string", "app_type", "动作冒险"
 
+            resValue "bool", "multiplayer", "true"
+
             resValue "string", "DANGBEIAD_APPID", "VuNbftkGwbXMEMueDWj8NNrJwYKeM9BAkDmgEfQETvCDRjug"
             resValue "string", "DANGBEIAD_APPKEY", "4FCCE1669062CD9F"
 
@@ -716,6 +718,8 @@ android {
         hundouluo2 {
             resValue "string", "app_name", "魂斗罗2"
             resValue "string", "app_type", "动作冒险"
+
+            resValue "bool", "multiplayer", "true"
 
             resValue "string", "DANGBEIAD_APPID", "qe6BDRhEDTN9T4j5HrPPK8LRbh8bcTfzGsqCBbKcDQJV5SJb"
             resValue "string", "DANGBEIAD_APPKEY", "3CEFDD5FCF608F8E"
