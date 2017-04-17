@@ -155,15 +155,15 @@ android {
 
             addManifestPlaceholders([UMENG_CHANNEL: name])
         }
-//
-//        tvleshi {//乐视TV
-//            minifyEnabled false
-//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-//            signingConfig signingConfigs.release
-//
-//            addManifestPlaceholders([UMENG_CHANNEL: name])
-//        }
-//
+
+        tvleshi {//乐视TV
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+            addManifestPlaceholders([UMENG_CHANNEL: name])
+        }
+
 //        tvhuan {//欢视网
 //            minifyEnabled false
 //            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -746,8 +746,9 @@ dependencies {
 
     compile project(path: ':source')
     compile project(path: ':modules:framework')
-    debugCompile project(path: ':modules:DangBeiAd')
-    dangbeiCompile project(path: ':modules:DangBeiAd')
+    //debugCompile project(path: ':modules:DangBeiAd')
+    //dangbeiCompile project(path: ':modules:DangBeiAd')
+    compile project(path: ':modules:DangBeiAd')
     //compile project(path: ':modules:YouMiAd')
     //compile project(path: ':modules:WanPuAd')
     compile project(path: ':modules:DangBeiUpdate')
