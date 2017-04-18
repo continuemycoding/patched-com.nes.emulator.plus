@@ -320,5 +320,33 @@
     "multiplayer": true,
     "app_type": "动作冒险",
     "dislike": 0
+  },
+  {
+    "name": "松鼠大作战",
+    "packageName": "com.qiang.nes.songshudazuozhan",
+    "dangbei_appId": 0,
+    "versionName": "1.52",
+    "versionCode": 152,
+    "app_code": 0,
+    "url": "",
+    "releaseNote": "版本更新",
+    "app_scanimg": "",
+    "multiplayer": true,
+    "app_type": "动作冒险",
+    "dislike": 0
+  },
+  {
+    "name": "松鼠大作战2",
+    "packageName": "com.qiang.nes.songshudazuozhan2",
+    "dangbei_appId": 0,
+    "versionName": "1.52",
+    "versionCode": 152,
+    "app_code": 0,
+    "url": "",
+    "releaseNote": "版本更新",
+    "app_scanimg": "",
+    "multiplayer": true,
+    "app_type": "动作冒险",
+    "dislike": 0
   }
 ]
