@@ -726,6 +726,30 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58f443f68f4a9d52f5000159"])
         }
+
+        songshudazuozhan {
+            resValue "string", "app_name", "松鼠大作战"
+            resValue "string", "app_type", "动作冒险"
+
+            resValue "bool", "multiplayer", "true"
+
+            resValue "string", "DANGBEIAD_APPID", "rPYBNVbJ5wMJYZr92fvpfY57YZZspzwY2Krr6HTzJY6abrUk"
+            resValue "string", "DANGBEIAD_APPKEY", "6081D643258FC575"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58f5982d2ae85b17ef00026f"])
+        }
+
+        songshudazuozhan2 {
+            resValue "string", "app_name", "松鼠大作战2"
+            resValue "string", "app_type", "动作冒险"
+
+            resValue "bool", "multiplayer", "true"
+
+            resValue "string", "DANGBEIAD_APPID", "CjfXTpGTxhfKzxFJebEXYjUPKr9qPCX8wpTWCt3bDYEPDb65"
+            resValue "string", "DANGBEIAD_APPKEY", "F90685A85FCD1C8C"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58f5984907fe655b64000935"])
+        }
     }
 
     productFlavors.all { productFlavor ->
