@@ -292,5 +292,33 @@
     "multiplayer": false,
     "app_type": "动作冒险",
     "dislike": 0
+  },
+  {
+    "name": "魂斗罗2",
+    "packageName": "com.qiang.nes.hundouluo2",
+    "dangbei_appId": 5427,
+    "versionName": "1.52",
+    "versionCode": 152,
+    "app_code": 0,
+    "url": "http://app.znds.com/down/20170418/hdl2_1.52_dangbei.apk",
+    "releaseNote": "版本更新",
+    "app_scanimg": "http://img.znds.com/uploads/new/170418/9-1F41P94322229.jpg!h450,http://img.znds.com/uploads/new/170418/9-1F41P9432U24.jpg!h450,http://img.znds.com/uploads/new/170418/9-1F41P94335X0.jpg!h450,http://img.znds.com/uploads/new/170418/9-1F41P94342528.jpg!h450",
+    "multiplayer": true,
+    "app_type": "动作冒险",
+    "dislike": 0
+  },
+  {
+    "name": "魂斗罗",
+    "packageName": "com.qiang.nes.hundouluo",
+    "dangbei_appId": 5428,
+    "versionName": "1.52",
+    "versionCode": 152,
+    "app_code": 0,
+    "url": "http://app.znds.com/down/20170418/hundl_1.52_dangbei.apk",
+    "releaseNote": "版本更新",
+    "app_scanimg": "http://img.znds.com/uploads/new/170418/9-1F41P954595A.jpg!h450,http://img.znds.com/uploads/new/170418/9-1F41P9550D56.jpg!h450,http://img.znds.com/uploads/new/170418/9-1F41P95513400.jpg!h450,http://img.znds.com/uploads/new/170418/9-1F41P95525549.jpg!h450",
+    "multiplayer": true,
+    "app_type": "动作冒险",
+    "dislike": 0
   }
 ]
