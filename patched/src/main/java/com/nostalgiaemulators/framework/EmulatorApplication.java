@@ -21,16 +21,16 @@ public abstract class EmulatorApplication extends MyApplication {
     @Override
     public void onCreate() {
 
-        Log.setDebugMode(BuildConfig.DEBUG);
-        initVersionCodes();
-
         super.onCreate();
 
-        AdSystem.getInstance(this).init(MetaDataHelper.getString("DANGBEIAD_APPID"), MetaDataHelper.getString("DANGBEIAD_APPKEY"));
-        //ReflectHelper.invokeMethod("com.db.android.api.AdSystem", "init", new Object[]{MetaDataHelper.getString("DANGBEIAD_APPID"), MetaDataHelper.getString("DANGBEIAD_APPKEY")});
+        Log.setDebugMode(MetaDataHelper.getBoolean("DEBUG"));
+        initVersionCodes();
 
-        AdSystem.setLogState(BuildConfig.DEBUG);
-        //ReflectHelper.invokeMethod("com.db.android.api.AdSystem", "setLogState", new Object[]{com.qiang.framework.BuildConfig.DEBUG});
+        AdSystem.getInstance(this).init(MetaDataHelper.getString("DANGBEIAD_APPID"), MetaDataHelper.getString("DANGBEIAD_APPKEY"));
+        //ReflectHelper.invokeStaticMethod("com.db.android.api.AdSystem", "init", new Object[]{MetaDataHelper.getString("DANGBEIAD_APPID"), MetaDataHelper.getString("DANGBEIAD_APPKEY")});
+
+        AdSystem.setLogState(MetaDataHelper.getBoolean("DEBUG"));
+        //ReflectHelper.invokeStaticMethod("com.db.android.api.AdSystem", "setLogState", new Object[]{com.qiang.framework.BuildConfig.DEBUG});
     }
 
     private void initVersionCodes(){}
