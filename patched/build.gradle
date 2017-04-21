@@ -90,18 +90,18 @@ android {
         // of the source app. (Data is displayed when the source apk library is built.)
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 152
-        versionName "1.52"
+        versionCode 153
+        versionName "1.53"
 
-        resValue "string", "button_a", "按钮A"
-        resValue "string", "button_b", "按钮B"
-        resValue "string", "button_x", "按钮X"
-        resValue "string", "button_y", "按钮Y"
-
-        resValue "string", "button_a_visible", "false"
-        resValue "string", "button_b_visible", "false"
-        resValue "string", "button_x_visible", "false"
-        resValue "string", "button_y_visible", "false"
+//        resValue "string", "button_a", "按钮A"
+//        resValue "string", "button_b", "按钮B"
+//        resValue "string", "button_x", "按钮X"
+//        resValue "string", "button_y", "按钮Y"
+//
+//        resValue "string", "button_a_visible", "false"
+//        resValue "string", "button_b_visible", "false"
+//        resValue "string", "button_x_visible", "false"
+//        resValue "string", "button_y_visible", "false"
 
         resValue "bool", "multiplayer", "false"
 
@@ -623,6 +623,11 @@ android {
         sanshiliuji {
             resValue "string", "app_name", "三十六计"
             resValue "string", "app_type", "战略策略"
+
+            resValue "bool", "multiplayer", "true"
+
+            resValue "string", "DANGBEIAD_APPID", "cuyYatpkjpa5MeYgbykJkVQE7a65DEPwxVRYgWpDqTBWCWxP"
+            resValue "string", "DANGBEIAD_APPKEY", "39CF1227A4E89C8D"
 
             addManifestPlaceholders([UMENG_APPKEY: "58ce08d0734be4022200137b"])
         }
