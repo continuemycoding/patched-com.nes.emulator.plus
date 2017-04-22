@@ -986,8 +986,8 @@
     .line 182
     invoke-virtual/range {p0 .. p0}, Lcom/nostalgiaemulators/framework/ui/gamegallery/GalleryActivity;->copyGamesToDownloadFolder()V
 
-    .line 185
-    invoke-static/range {p0 .. p0}, Lcom/sbstrm/appirater/Appirater;->appLaunched(Landroid/content/Context;)V
+    #.line 185
+    #invoke-static/range {p0 .. p0}, Lcom/sbstrm/appirater/Appirater;->appLaunched(Landroid/content/Context;)V
 
     .line 188
     invoke-static/range {p0 .. p0}, Lcom/nostalgiaemulators/framework/utils/GoogleAnalyticsHelper;->getInstance(Landroid/app/Activity;)Lcom/nostalgiaemulators/framework/utils/GoogleAnalyticsHelper;

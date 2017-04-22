@@ -29,7 +29,7 @@
 
 .field public static final activity_slot_selection:I = 0x7f040006
 
-.field public static final appirater:I = 0x7f040007
+#.field public static final appirater:I = 0x7f040007
 
 .field public static final controler_layout:I = 0x7f040008
 
