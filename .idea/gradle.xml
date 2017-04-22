@@ -10,9 +10,11 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/modules" />
             <option value="$PROJECT_DIR$/modules/DangBeiAd" />
+            <option value="$PROJECT_DIR$/modules/DangBeiUpdate" />
             <option value="$PROJECT_DIR$/modules/YouMiAd" />
             <option value="$PROJECT_DIR$/modules/framework" />
             <option value="$PROJECT_DIR$/patched" />
+            <option value="$PROJECT_DIR$/productManager" />
             <option value="$PROJECT_DIR$/source" />
           </set>
         </option>
