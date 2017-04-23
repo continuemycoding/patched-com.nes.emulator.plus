@@ -15,29 +15,29 @@
 
 
 # static fields
-.field public static final default_fragment:I = 0x7f077000
+.field public static final default_fragment:I = 0x7f070000
 
-.field public static final default_vertex:I = 0x7f077001
+.field public static final default_vertex:I = 0x7f070001
 
-.field public static final game:I = 0x7f07700b
+.field public static final game:I = 0x7f07000b
 
-.field public static final gtm_analytics:I = 0x7f077002
+.field public static final gtm_analytics:I = 0x7f070002
 
-.field public static final scale2x:I = 0x7f077003
+.field public static final scale2x:I = 0x7f070003
 
-.field public static final scale2x_cg:I = 0x7f077004
+.field public static final scale2x_cg:I = 0x7f070004
 
-.field public static final scale2xhq:I = 0x7f077005
+.field public static final scale2xhq:I = 0x7f070005
 
-.field public static final scale2xhq_cg:I = 0x7f077006
+.field public static final scale2xhq_cg:I = 0x7f070006
 
-.field public static final super2xsai:I = 0x7f077007
+.field public static final super2xsai:I = 0x7f070007
 
-.field public static final super2xsai_cg:I = 0x7f077008
+.field public static final super2xsai_cg:I = 0x7f070008
 
-.field public static final supereagle:I = 0x7f077009
+.field public static final supereagle:I = 0x7f070009
 
-.field public static final supereagle_cg:I = 0x7f07700a
+.field public static final supereagle_cg:I = 0x7f07000a
 
 
 # direct methods

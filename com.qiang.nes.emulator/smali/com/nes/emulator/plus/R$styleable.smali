@@ -271,7 +271,7 @@
     new-array v0, v4, [I
 
     .line 2226
-    const v1, 0x7f017029
+    const v1, 0x7f010029
 
     aput v1, v0, v3
 
@@ -377,7 +377,7 @@
     new-array v0, v4, [I
 
     .line 3867
-    const v1, 0x7f017055
+    const v1, 0x7f010055
 
     aput v1, v0, v3
 

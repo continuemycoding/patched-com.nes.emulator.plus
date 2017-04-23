@@ -15,19 +15,19 @@
 
 
 # static fields
-.field public static final file:I = 0x7f02707a
+.field public static final file:I = 0x7f02007a
 
-.field public static final file_audio:I = 0x7f02707b
+.field public static final file_audio:I = 0x7f02007b
 
-.field public static final file_compressed:I = 0x7f02707c
+.field public static final file_compressed:I = 0x7f02007c
 
-.field public static final file_image:I = 0x7f02707d
+.field public static final file_image:I = 0x7f02007d
 
-.field public static final file_plain_text:I = 0x7f02707e
+.field public static final file_plain_text:I = 0x7f02007e
 
-.field public static final file_video:I = 0x7f02707f
+.field public static final file_video:I = 0x7f02007f
 
-.field public static final folder:I = 0x7f027080
+.field public static final folder:I = 0x7f020080
 
 
 # direct methods

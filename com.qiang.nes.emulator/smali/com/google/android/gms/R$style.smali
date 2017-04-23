@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final Theme_IAPTheme:I = 0x7f0c7001
+.field public static final Theme_IAPTheme:I = 0x7f0c0001
 
-.field public static final WalletFragmentDefaultButtonTextAppearance:I = 0x7f0c7004
+.field public static final WalletFragmentDefaultButtonTextAppearance:I = 0x7f0c0004
 
-.field public static final WalletFragmentDefaultDetailsHeaderTextAppearance:I = 0x7f0c7003
+.field public static final WalletFragmentDefaultDetailsHeaderTextAppearance:I = 0x7f0c0003
 
-.field public static final WalletFragmentDefaultDetailsTextAppearance:I = 0x7f0c7002
+.field public static final WalletFragmentDefaultDetailsTextAppearance:I = 0x7f0c0002
 
-.field public static final WalletFragmentDefaultStyle:I = 0x7f0c7005
+.field public static final WalletFragmentDefaultStyle:I = 0x7f0c0005
 
 
 # direct methods

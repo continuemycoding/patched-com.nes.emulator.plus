@@ -15,111 +15,111 @@
 
 
 # static fields
-.field public static final cast_ic_notification_0:I = 0x7f02703a
+.field public static final cast_ic_notification_0:I = 0x7f02003a
 
-.field public static final cast_ic_notification_1:I = 0x7f02703b
+.field public static final cast_ic_notification_1:I = 0x7f02003b
 
-.field public static final cast_ic_notification_2:I = 0x7f02703c
+.field public static final cast_ic_notification_2:I = 0x7f02003c
 
-.field public static final cast_ic_notification_connecting:I = 0x7f02703d
+.field public static final cast_ic_notification_connecting:I = 0x7f02003d
 
-.field public static final cast_ic_notification_on:I = 0x7f02703e
+.field public static final cast_ic_notification_on:I = 0x7f02003e
 
-.field public static final common_full_open_on_phone:I = 0x7f027042
+.field public static final common_full_open_on_phone:I = 0x7f020042
 
-.field public static final common_google_signin_btn_icon_dark:I = 0x7f027043
+.field public static final common_google_signin_btn_icon_dark:I = 0x7f020043
 
-.field public static final common_google_signin_btn_icon_dark_disabled:I = 0x7f027044
+.field public static final common_google_signin_btn_icon_dark_disabled:I = 0x7f020044
 
-.field public static final common_google_signin_btn_icon_dark_focused:I = 0x7f027045
+.field public static final common_google_signin_btn_icon_dark_focused:I = 0x7f020045
 
-.field public static final common_google_signin_btn_icon_dark_normal:I = 0x7f027046
+.field public static final common_google_signin_btn_icon_dark_normal:I = 0x7f020046
 
-.field public static final common_google_signin_btn_icon_dark_pressed:I = 0x7f027047
+.field public static final common_google_signin_btn_icon_dark_pressed:I = 0x7f020047
 
-.field public static final common_google_signin_btn_icon_light:I = 0x7f027048
+.field public static final common_google_signin_btn_icon_light:I = 0x7f020048
 
-.field public static final common_google_signin_btn_icon_light_disabled:I = 0x7f027049
+.field public static final common_google_signin_btn_icon_light_disabled:I = 0x7f020049
 
-.field public static final common_google_signin_btn_icon_light_focused:I = 0x7f02704a
+.field public static final common_google_signin_btn_icon_light_focused:I = 0x7f02004a
 
-.field public static final common_google_signin_btn_icon_light_normal:I = 0x7f02704b
+.field public static final common_google_signin_btn_icon_light_normal:I = 0x7f02004b
 
-.field public static final common_google_signin_btn_icon_light_pressed:I = 0x7f02704c
+.field public static final common_google_signin_btn_icon_light_pressed:I = 0x7f02004c
 
-.field public static final common_google_signin_btn_text_dark:I = 0x7f02704d
+.field public static final common_google_signin_btn_text_dark:I = 0x7f02004d
 
-.field public static final common_google_signin_btn_text_dark_disabled:I = 0x7f02704e
+.field public static final common_google_signin_btn_text_dark_disabled:I = 0x7f02004e
 
-.field public static final common_google_signin_btn_text_dark_focused:I = 0x7f02704f
+.field public static final common_google_signin_btn_text_dark_focused:I = 0x7f02004f
 
-.field public static final common_google_signin_btn_text_dark_normal:I = 0x7f027050
+.field public static final common_google_signin_btn_text_dark_normal:I = 0x7f020050
 
-.field public static final common_google_signin_btn_text_dark_pressed:I = 0x7f027051
+.field public static final common_google_signin_btn_text_dark_pressed:I = 0x7f020051
 
-.field public static final common_google_signin_btn_text_light:I = 0x7f027052
+.field public static final common_google_signin_btn_text_light:I = 0x7f020052
 
-.field public static final common_google_signin_btn_text_light_disabled:I = 0x7f027053
+.field public static final common_google_signin_btn_text_light_disabled:I = 0x7f020053
 
-.field public static final common_google_signin_btn_text_light_focused:I = 0x7f027054
+.field public static final common_google_signin_btn_text_light_focused:I = 0x7f020054
 
-.field public static final common_google_signin_btn_text_light_normal:I = 0x7f027055
+.field public static final common_google_signin_btn_text_light_normal:I = 0x7f020055
 
-.field public static final common_google_signin_btn_text_light_pressed:I = 0x7f027056
+.field public static final common_google_signin_btn_text_light_pressed:I = 0x7f020056
 
-.field public static final common_ic_googleplayservices:I = 0x7f027057
+.field public static final common_ic_googleplayservices:I = 0x7f020057
 
-.field public static final common_plus_signin_btn_icon_dark:I = 0x7f027058
+.field public static final common_plus_signin_btn_icon_dark:I = 0x7f020058
 
-.field public static final common_plus_signin_btn_icon_dark_disabled:I = 0x7f027059
+.field public static final common_plus_signin_btn_icon_dark_disabled:I = 0x7f020059
 
-.field public static final common_plus_signin_btn_icon_dark_focused:I = 0x7f02705a
+.field public static final common_plus_signin_btn_icon_dark_focused:I = 0x7f02005a
 
-.field public static final common_plus_signin_btn_icon_dark_normal:I = 0x7f02705b
+.field public static final common_plus_signin_btn_icon_dark_normal:I = 0x7f02005b
 
-.field public static final common_plus_signin_btn_icon_dark_pressed:I = 0x7f02705c
+.field public static final common_plus_signin_btn_icon_dark_pressed:I = 0x7f02005c
 
-.field public static final common_plus_signin_btn_icon_light:I = 0x7f02705d
+.field public static final common_plus_signin_btn_icon_light:I = 0x7f02005d
 
-.field public static final common_plus_signin_btn_icon_light_disabled:I = 0x7f02705e
+.field public static final common_plus_signin_btn_icon_light_disabled:I = 0x7f02005e
 
-.field public static final common_plus_signin_btn_icon_light_focused:I = 0x7f02705f
+.field public static final common_plus_signin_btn_icon_light_focused:I = 0x7f02005f
 
-.field public static final common_plus_signin_btn_icon_light_normal:I = 0x7f027060
+.field public static final common_plus_signin_btn_icon_light_normal:I = 0x7f020060
 
-.field public static final common_plus_signin_btn_icon_light_pressed:I = 0x7f027061
+.field public static final common_plus_signin_btn_icon_light_pressed:I = 0x7f020061
 
-.field public static final common_plus_signin_btn_text_dark:I = 0x7f027062
+.field public static final common_plus_signin_btn_text_dark:I = 0x7f020062
 
-.field public static final common_plus_signin_btn_text_dark_disabled:I = 0x7f027063
+.field public static final common_plus_signin_btn_text_dark_disabled:I = 0x7f020063
 
-.field public static final common_plus_signin_btn_text_dark_focused:I = 0x7f027064
+.field public static final common_plus_signin_btn_text_dark_focused:I = 0x7f020064
 
-.field public static final common_plus_signin_btn_text_dark_normal:I = 0x7f027065
+.field public static final common_plus_signin_btn_text_dark_normal:I = 0x7f020065
 
-.field public static final common_plus_signin_btn_text_dark_pressed:I = 0x7f027066
+.field public static final common_plus_signin_btn_text_dark_pressed:I = 0x7f020066
 
-.field public static final common_plus_signin_btn_text_light:I = 0x7f027067
+.field public static final common_plus_signin_btn_text_light:I = 0x7f020067
 
-.field public static final common_plus_signin_btn_text_light_disabled:I = 0x7f027068
+.field public static final common_plus_signin_btn_text_light_disabled:I = 0x7f020068
 
-.field public static final common_plus_signin_btn_text_light_focused:I = 0x7f027069
+.field public static final common_plus_signin_btn_text_light_focused:I = 0x7f020069
 
-.field public static final common_plus_signin_btn_text_light_normal:I = 0x7f02706a
+.field public static final common_plus_signin_btn_text_light_normal:I = 0x7f02006a
 
-.field public static final common_plus_signin_btn_text_light_pressed:I = 0x7f02706b
+.field public static final common_plus_signin_btn_text_light_pressed:I = 0x7f02006b
 
-.field public static final ic_plusone_medium_off_client:I = 0x7f0270a9
+.field public static final ic_plusone_medium_off_client:I = 0x7f0200a9
 
-.field public static final ic_plusone_small_off_client:I = 0x7f0270aa
+.field public static final ic_plusone_small_off_client:I = 0x7f0200aa
 
-.field public static final ic_plusone_standard_off_client:I = 0x7f0270ab
+.field public static final ic_plusone_standard_off_client:I = 0x7f0200ab
 
-.field public static final ic_plusone_tall_off_client:I = 0x7f0270ac
+.field public static final ic_plusone_tall_off_client:I = 0x7f0200ac
 
-.field public static final powered_by_google_dark:I = 0x7f0270c0
+.field public static final powered_by_google_dark:I = 0x7f0200c0
 
-.field public static final powered_by_google_light:I = 0x7f0270c1
+.field public static final powered_by_google_light:I = 0x7f0200c1
 
 
 # direct methods
