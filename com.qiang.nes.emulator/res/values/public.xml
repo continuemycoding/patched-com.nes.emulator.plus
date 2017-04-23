@@ -125,7 +125,6 @@
   <public type="drawable" name="game_menu_button_focus" id="0x7f027086" />
   <public type="drawable" name="game_menu_button_selector" id="0x7f027087" />
   <public type="drawable" name="gamemenu_textcolor_selector" id="0x7f027088" />
-  <public type="drawable" name="APKTOOL_DUMMY_a1" id="0x7f0270a1" />
   <public type="drawable" name="list_selector_focused" id="0x7f0270bc" />
   <public type="drawable" name="list_selector_press" id="0x7f0270bd" />
   <public type="drawable" name="list_selector_select" id="0x7f0270be" />
@@ -468,7 +467,6 @@
   <public type="string" name="common_google_play_services_sign_in_failed_title" id="0x7f087030" />
   <public type="string" name="common_google_play_services_sign_in_failed_text" id="0x7f087031" />
   <public type="string" name="wallet_buy_button_place_holder" id="0x7f087032" />
-  <public type="string" name="APKTOOL_DUMMY_33" id="0x7f087033" />
   <public type="string" name="ga_trackingId" id="0x7f0800b5" />
   <public type="string" name="ga_appName" id="0x7f087035" />
   <public type="string" name="ga_appVersion" id="0x7f087036" />
