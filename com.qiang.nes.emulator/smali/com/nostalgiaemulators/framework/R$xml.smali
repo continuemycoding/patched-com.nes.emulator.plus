@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final game_preferences:I = 0x7f060000
+.field public static final game_preferences:I = 0x7f057000
 
-.field public static final game_preferences_header:I = 0x7f060001
+.field public static final game_preferences_header:I = 0x7f057001
 
-.field public static final general_preferences:I = 0x7f060002
+.field public static final general_preferences:I = 0x7f057002
 
-.field public static final general_preferences_header:I = 0x7f060003
+.field public static final general_preferences_header:I = 0x7f057003
 
 
 # direct methods

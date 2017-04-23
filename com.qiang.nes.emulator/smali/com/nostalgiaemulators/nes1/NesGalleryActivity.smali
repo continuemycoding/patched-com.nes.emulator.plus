@@ -197,23 +197,23 @@
 
     .prologue
     .line 103
-    const v0, 0x7f0800ab
+    const v0, 0x7f0870ab
 
-    const v1, 0x7f020095
+    const v1, 0x7f027095
 
     invoke-virtual {p1, v0, v1}, Lcom/nostalgiaemulators/framework/base/GameMenu;->add(II)Lcom/nostalgiaemulators/framework/base/GameMenu$GameMenuItem;
 
     .line 108
-    const v0, 0x7f0800a5
+    const v0, 0x7f0870a5
 
-    const v1, 0x7f0200af
+    const v1, 0x7f0270af
 
     invoke-virtual {p1, v0, v1}, Lcom/nostalgiaemulators/framework/base/GameMenu;->add(II)Lcom/nostalgiaemulators/framework/base/GameMenu$GameMenuItem;
 
     .line 110
-    const v0, 0x7f0800a0
+    const v0, 0x7f0870a0
 
-    const v1, 0x7f02009b
+    const v1, 0x7f02709b
 
     invoke-virtual {p1, v0, v1}, Lcom/nostalgiaemulators/framework/base/GameMenu;->add(II)Lcom/nostalgiaemulators/framework/base/GameMenu$GameMenuItem;
 
@@ -266,7 +266,7 @@
 
     .line 80
     .local v1, "path":Ljava/lang/String;
-    const v2, 0x7f07000b
+    const v2, 0x7f06000b
 
     invoke-static {p0, v2, v1}, Lcom/qiang/framework/helpers/FileHelper;->copyResource(Landroid/content/Context;ILjava/lang/String;)Z
 

@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final gtm_analytics:I = 0x7f070002
+.field public static final gtm_analytics:I = 0x7f060002
 
 
 # direct methods

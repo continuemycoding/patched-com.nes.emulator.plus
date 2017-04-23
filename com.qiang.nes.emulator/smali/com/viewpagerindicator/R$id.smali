@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final bottom:I = 0x7f0d002c
+.field public static final bottom:I = 0x7f0c702c
 
-.field public static final none:I = 0x7f0d0009
+.field public static final none:I = 0x7f0c7009
 
-.field public static final top:I = 0x7f0d002d
+.field public static final top:I = 0x7f0c702d
 
-.field public static final triangle:I = 0x7f0d002a
+.field public static final triangle:I = 0x7f0c702a
 
-.field public static final underline:I = 0x7f0d002b
+.field public static final underline:I = 0x7f0c702b
 
 
 # direct methods

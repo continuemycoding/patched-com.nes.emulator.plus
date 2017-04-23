@@ -15,23 +15,23 @@
 
 
 # static fields
-.field public static final appirator_days_before_reminding:I = 0x7f090002
+.field public static final appirator_days_before_reminding:I = 0x7f0e0002
 
-.field public static final appirator_days_until_prompt:I = 0x7f090000
+.field public static final appirator_days_until_prompt:I = 0x7f0e7000
 
-.field public static final appirator_launches_until_prompt:I = 0x7f090001
+.field public static final appirator_launches_until_prompt:I = 0x7f0e7001
 
-.field public static final default_circle_indicator_orientation:I = 0x7f090004
+.field public static final default_circle_indicator_orientation:I = 0x7f0e0004
 
-.field public static final default_title_indicator_footer_indicator_style:I = 0x7f090005
+.field public static final default_title_indicator_footer_indicator_style:I = 0x7f0e0005
 
-.field public static final default_title_indicator_line_position:I = 0x7f090006
+.field public static final default_title_indicator_line_position:I = 0x7f0e0006
 
-.field public static final default_underline_indicator_fade_delay:I = 0x7f090007
+.field public static final default_underline_indicator_fade_delay:I = 0x7f0e0007
 
-.field public static final default_underline_indicator_fade_length:I = 0x7f090008
+.field public static final default_underline_indicator_fade_length:I = 0x7f0e0008
 
-.field public static final google_play_services_version:I = 0x7f090003
+.field public static final google_play_services_version:I = 0x7f0e0003
 
 
 # direct methods

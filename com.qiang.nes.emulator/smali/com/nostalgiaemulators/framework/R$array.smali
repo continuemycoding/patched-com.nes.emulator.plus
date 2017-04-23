@@ -15,17 +15,17 @@
 
 
 # static fields
-.field public static final general_pref_quality_list:I = 0x7f0f0004
+.field public static final general_pref_quality_list:I = 0x7f0a7004
 
-.field public static final general_pref_quality_values:I = 0x7f0f0005
+.field public static final general_pref_quality_values:I = 0x7f0a7005
 
-.field public static final general_pref_rotation_list:I = 0x7f0f0000
+.field public static final general_pref_rotation_list:I = 0x7f0a7000
 
-.field public static final general_pref_rotation_values:I = 0x7f0f0001
+.field public static final general_pref_rotation_values:I = 0x7f0a7001
 
-.field public static final general_pref_shader_list:I = 0x7f0f0002
+.field public static final general_pref_shader_list:I = 0x7f0a7002
 
-.field public static final general_pref_shader_values:I = 0x7f0f0003
+.field public static final general_pref_shader_values:I = 0x7f0a7003
 
 
 # direct methods

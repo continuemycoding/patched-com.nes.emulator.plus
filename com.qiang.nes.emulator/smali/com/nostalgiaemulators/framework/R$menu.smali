@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final touch_settings_menu:I = 0x7f100002
+.field public static final touch_settings_menu:I = 0x7f0f7002
 
 
 # direct methods

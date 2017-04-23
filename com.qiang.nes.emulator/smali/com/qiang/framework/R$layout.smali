@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final recommend_dialog:I = 0x7f040022
+.field public static final recommend_dialog:I = 0x7f037022
 
 
 # direct methods

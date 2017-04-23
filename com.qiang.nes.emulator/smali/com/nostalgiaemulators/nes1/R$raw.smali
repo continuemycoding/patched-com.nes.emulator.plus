@@ -15,27 +15,27 @@
 
 
 # static fields
-.field public static final default_fragment:I = 0x7f070000
+.field public static final default_fragment:I = 0x7f067000
 
-.field public static final default_vertex:I = 0x7f070001
+.field public static final default_vertex:I = 0x7f067001
 
-.field public static final gtm_analytics:I = 0x7f070002
+.field public static final gtm_analytics:I = 0x7f060002
 
-.field public static final scale2x:I = 0x7f070003
+.field public static final scale2x:I = 0x7f060003
 
-.field public static final scale2x_cg:I = 0x7f070004
+.field public static final scale2x_cg:I = 0x7f060004
 
-.field public static final scale2xhq:I = 0x7f070005
+.field public static final scale2xhq:I = 0x7f060005
 
-.field public static final scale2xhq_cg:I = 0x7f070006
+.field public static final scale2xhq_cg:I = 0x7f060006
 
-.field public static final super2xsai:I = 0x7f070007
+.field public static final super2xsai:I = 0x7f060007
 
-.field public static final super2xsai_cg:I = 0x7f070008
+.field public static final super2xsai_cg:I = 0x7f060008
 
-.field public static final supereagle:I = 0x7f070009
+.field public static final supereagle:I = 0x7f060009
 
-.field public static final supereagle_cg:I = 0x7f07000a
+.field public static final supereagle_cg:I = 0x7f06000a
 
 
 # direct methods

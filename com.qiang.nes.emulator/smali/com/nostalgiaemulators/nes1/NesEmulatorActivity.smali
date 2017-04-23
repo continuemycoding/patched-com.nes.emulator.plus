@@ -496,30 +496,30 @@
 
     .prologue
     .line 68
-    const v0, 0x7f080053
+    const v0, 0x7f087053
 
-    const v1, 0x7f0200af
+    const v1, 0x7f0270af
 
     invoke-virtual {p1, v0, v1}, Lcom/nostalgiaemulators/framework/base/GameMenu;->add(II)Lcom/nostalgiaemulators/framework/base/GameMenu$GameMenuItem;
 
     .line 69
-    const v0, 0x7f080055
+    const v0, 0x7f087055
 
-    const v1, 0x7f0200b1
+    const v1, 0x7f020207
 
     invoke-virtual {p1, v0, v1}, Lcom/nostalgiaemulators/framework/base/GameMenu;->add(II)Lcom/nostalgiaemulators/framework/base/GameMenu$GameMenuItem;
 
     .line 70
-    const v0, 0x7f080054
+    const v0, 0x7f087054
 
-    const v1, 0x7f0200a3
+    const v1, 0x7f0270a3
 
     invoke-virtual {p1, v0, v1}, Lcom/nostalgiaemulators/framework/base/GameMenu;->add(II)Lcom/nostalgiaemulators/framework/base/GameMenu$GameMenuItem;
 
     .line 71
-    const v0, 0x7f080058
+    const v0, 0x7f087058
 
-    const v1, 0x7f02009b
+    const v1, 0x7f02709b
 
     invoke-virtual {p1, v0, v1}, Lcom/nostalgiaemulators/framework/base/GameMenu;->add(II)Lcom/nostalgiaemulators/framework/base/GameMenu$GameMenuItem;
 

@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final activity_main:I = 0x7f100000
+.field public static final activity_main:I = 0x7f0f0000
 
-.field public static final activity_mainx:I = 0x7f100001
+.field public static final activity_mainx:I = 0x7f0f7001
 
-.field public static final touch_settings_menu:I = 0x7f100002
+.field public static final touch_settings_menu:I = 0x7f0f7002
 
 
 # direct methods

@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final file_picker_empty_view:I = 0x7f040010
+.field public static final file_picker_empty_view:I = 0x7f037010
 
-.field public static final file_picker_list_item:I = 0x7f040011
+.field public static final file_picker_list_item:I = 0x7f037011
 
-.field public static final list_holder:I = 0x7f040014
+.field public static final list_holder:I = 0x7f037014
 
-.field public static final main:I = 0x7f040015
+.field public static final main:I = 0x7f030085
 
 
 # direct methods
