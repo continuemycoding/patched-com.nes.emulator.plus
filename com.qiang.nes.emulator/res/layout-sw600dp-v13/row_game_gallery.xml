@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#00ffffff" android:layout_width="400.0dip" android:layout_height="400.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="380.0dip" android:layout_height="380.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/game_item_bck" android:layout_width="380.0dip" android:layout_height="380.0dip" android:src="@drawable/game_item_bck" android:contentDescription="@string/empty_desc" />
+        <ImageView android:id="@id/game_item_arrow" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="40.0dip" android:src="@drawable/down_arrow" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/empty_desc" />
+        <ImageView android:id="@id/game_item_booklet" android:layout_width="148.0dip" android:layout_height="221.0dip" android:layout_marginLeft="158.0dip" android:layout_marginTop="17.0dip" />
+    </RelativeLayout>
+    <TextView android:textSize="25.0dip" android:textColor="@drawable/row_game_item_text_selector" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/row_game_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="sdf" android:shadowColor="#ff33b5e5" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="6.0" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.qiang.nes.emulator.apk
+compressionType: false
+doNotCompress:
+- arsc
+- zip
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '22'
+sharedLibrary: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.2
+versionInfo:
+  versionCode: '153'
+  versionName: '1.53'

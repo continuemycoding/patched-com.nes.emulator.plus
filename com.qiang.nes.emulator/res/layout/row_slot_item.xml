@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/row_slot_item_bck_selector" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/slot_item_size" android:layout_height="@dimen/slot_item_size">
+        <ImageView android:id="@id/row_slot_bck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/slot_item_bck" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/row_slot_screenshot" android:layout_width="120.0dip" android:layout_height="90.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/row_slot_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="3.0dip" android:text="SLOT 1" android:layout_alignTop="@id/row_slot_bck" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="6.0dip" android:layout_alignBottom="@id/row_slot_bck">
+            <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:id="@id/row_slot_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="12.07.2013" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0dip" android:textColor="#ff000000" android:gravity="right" android:id="@id/row_slot_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19.0dip" android:text="20:20" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="24.0dip" android:textColor="#ff000000" android:gravity="center_horizontal" android:id="@id/row_slot_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="EMPTY" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

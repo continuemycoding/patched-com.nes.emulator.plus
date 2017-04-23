@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.nostalgiaemulators.framework.ui.preferences.PlayersLabelView android:id="@id/act_keyboard_settings_plv" android:layout_width="40.0dip" android:layout_height="fill_parent" />
+    <View android:background="#ff888888" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <ListView android:id="@id/act_keyboard_settings_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollingCache="false" />
+</LinearLayout>

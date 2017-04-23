@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_video_settings" android:key="game_pref_ui_pal_ntsc_switch_category">
+        <com.nostalgiaemulators.framework.ui.preferences.ControllableListPreference android:title="@string/game_pref_ui_pal_ntsc" android:key="game_pref_ui_pal_ntsc_switch" android:summary="@string/game_pref_ui_pal_ntsc_desc" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_other_settings" android:key="game_pref_other_category">
+        <CheckBoxPreference android:icon="@drawable/ic_zapper" android:title="@string/game_pref_zapper" android:key="game_pref_zapper" android:defaultValue="false" />
+        <Preference android:icon="@drawable/ic_game_settings" android:title="@string/general_pref">
+            <intent android:action="@string/action_general_pref">
+                <extra android:name=":android:no_headers" android:value="true" />
+                <extra android:name=":android:show_fragment" android:value="com.nostalgiaemulators.framework.ui.preferences.GeneralPreferenceFragment" />
+            </intent>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

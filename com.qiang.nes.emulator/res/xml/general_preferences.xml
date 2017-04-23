@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sbp="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="声音">
+        <CheckBoxPreference android:title="@string/general_pref_mute" android:key="general_pref_mute" android:defaultValue="false" />
+        <com.nostalgiaemulators.framework.ui.preferences.ControllableSeekBarPreference android:max="100" android:text="%" android:title="@string/general_pref_sound_volume" android:key="general_pref_sound_volume" android:defaultValue="100" android:dialogMessage="" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="显示设置">
+        <CheckBoxPreference android:title="@string/general_pref_fullscreen" android:key="general_pref_fullscreen" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

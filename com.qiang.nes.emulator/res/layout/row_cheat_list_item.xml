@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/row_cheat_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="5.0dip" android:checked="true" android:button="@drawable/checkbox_selector" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/main_color" android:id="@id/row_cheat_chars" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="FF5467498465" android:singleLine="true" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/main_color" android:id="@id/row_cheat_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Immortallity" android:singleLine="true" />
+    </LinearLayout>
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/row_cheat_edit" android:background="@drawable/ab_button_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cheat_edit" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/row_cheat_remove" android:background="@drawable/ab_button_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cheat_remove" />
+</LinearLayout>
