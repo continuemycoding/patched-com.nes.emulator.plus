@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final recommend_dialog_cancel:I = 0x7f0d00cd
+.field public static final recommend_dialog_cancel:I = 0x7f0c00cd
 
-.field public static final recommend_dialog_confirm:I = 0x7f0d00cc
+.field public static final recommend_dialog_confirm:I = 0x7f0c00cc
 
-.field public static final recommend_dialog_image:I = 0x7f0d00cb
+.field public static final recommend_dialog_image:I = 0x7f0c00cb
 
-.field public static final recommend_dialog_title:I = 0x7f0d00ca
+.field public static final recommend_dialog_title:I = 0x7f0c00ca
 
 
 # direct methods

@@ -15,71 +15,71 @@
 
 
 # static fields
-.field public static final activity_app_wall:I = 0x7f040000
+.field public static final activity_app_wall:I = 0x7f047000
 
-.field public static final activity_cheats:I = 0x7f040001
+.field public static final activity_cheats:I = 0x7f047001
 
-.field public static final activity_facebook:I = 0x7f040002
+.field public static final activity_facebook:I = 0x7f047002
 
-.field public static final activity_gallery:I = 0x7f040003
+.field public static final activity_gallery:I = 0x7f030003
 
-.field public static final activity_keyboard_settings:I = 0x7f040004
+.field public static final activity_keyboard_settings:I = 0x7f030004
 
-.field public static final activity_remote_controller:I = 0x7f040005
+.field public static final activity_remote_controller:I = 0x7f030005
 
-.field public static final activity_slot_selection:I = 0x7f040006
+.field public static final activity_slot_selection:I = 0x7f030006
 
-.field public static final controler_layout:I = 0x7f040008
+.field public static final controler_layout:I = 0x7f030008
 
-.field public static final dialog_manually_set_server:I = 0x7f040009
+.field public static final dialog_manually_set_server:I = 0x7f030009
 
-.field public static final dialog_new_cheat:I = 0x7f04000a
+.field public static final dialog_new_cheat:I = 0x7f03000a
 
-.field public static final dialog_select_port:I = 0x7f04000b
+.field public static final dialog_select_port:I = 0x7f03000b
 
-.field public static final dialog_select_server:I = 0x7f04000c
+.field public static final dialog_select_server:I = 0x7f03000c
 
-.field public static final dialog_time_travel:I = 0x7f04000d
+.field public static final dialog_time_travel:I = 0x7f03000d
 
-.field public static final dpad:I = 0x7f04000e
+.field public static final dpad:I = 0x7f03000e
 
-.field public static final dpad_large:I = 0x7f04000f
+.field public static final dpad_large:I = 0x7f03000f
 
-.field public static final file_picker_empty_view:I = 0x7f040010
+.field public static final file_picker_empty_view:I = 0x7f030010
 
-.field public static final file_picker_list_item:I = 0x7f040011
+.field public static final file_picker_list_item:I = 0x7f030011
 
-.field public static final game_menu_item:I = 0x7f040012
+.field public static final game_menu_item:I = 0x7f030012
 
-.field public static final game_menu_surround:I = 0x7f040013
+.field public static final game_menu_surround:I = 0x7f030013
 
-.field public static final list_holder:I = 0x7f040014
+.field public static final list_holder:I = 0x7f030014
 
-.field public static final main:I = 0x7f040015
+.field public static final main:I = 0x7f030085
 
-.field public static final menu_list_item:I = 0x7f040016
+.field public static final menu_list_item:I = 0x7f030016
 
-.field public static final next_ads_layout:I = 0x7f040017
+.field public static final next_ads_layout:I = 0x7f030017
 
-.field public static final popup_menu:I = 0x7f040018
+.field public static final popup_menu:I = 0x7f030018
 
-.field public static final row_ads_list:I = 0x7f040019
+.field public static final row_ads_list:I = 0x7f030019
 
-.field public static final row_cheat_list_item:I = 0x7f04001a
+.field public static final row_cheat_list_item:I = 0x7f03001a
 
-.field public static final row_game_gallery:I = 0x7f04001b
+.field public static final row_game_gallery:I = 0x7f03001b
 
-.field public static final row_game_list:I = 0x7f04001c
+.field public static final row_game_list:I = 0x7f03001c
 
-.field public static final row_keyboard_settings:I = 0x7f04001d
+.field public static final row_keyboard_settings:I = 0x7f03001d
 
-.field public static final row_server_select_item:I = 0x7f04001e
+.field public static final row_server_select_item:I = 0x7f03001e
 
-.field public static final row_slot_item:I = 0x7f04001f
+.field public static final row_slot_item:I = 0x7f03001f
 
-.field public static final simple_text_tip:I = 0x7f040020
+.field public static final simple_text_tip:I = 0x7f030020
 
-.field public static final tips_dialog:I = 0x7f040021
+.field public static final tips_dialog:I = 0x7f030021
 
 
 # direct methods

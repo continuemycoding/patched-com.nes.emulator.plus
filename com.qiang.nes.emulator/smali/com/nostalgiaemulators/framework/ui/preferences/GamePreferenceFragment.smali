@@ -25,7 +25,7 @@
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 26
-    const v0, 0x7f060002
+    const v0, 0x7f050002
 
     invoke-virtual {p0, v0}, Lcom/nostalgiaemulators/framework/ui/preferences/GamePreferenceFragment;->addPreferencesFromResource(I)V
 

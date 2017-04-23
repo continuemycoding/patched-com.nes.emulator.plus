@@ -15,11 +15,11 @@
 
 
 # static fields
-.field public static final arow_right_anim:I = 0x7f050000
+.field public static final arow_right_anim:I = 0x7f057000
 
-.field public static final progress_rotate_anim2:I = 0x7f050001
+.field public static final progress_rotate_anim2:I = 0x7f057001
 
-.field public static final white_progress_rotate_anim:I = 0x7f050002
+.field public static final white_progress_rotate_anim:I = 0x7f057002
 
 
 # direct methods

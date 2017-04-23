@@ -15,19 +15,19 @@
 
 
 # static fields
-.field public static final vpi__tab_indicator:I = 0x7f02010d
+.field public static final vpi__tab_indicator:I = 0x7f02710d
 
-.field public static final vpi__tab_selected_focused_holo:I = 0x7f02010e
+.field public static final vpi__tab_selected_focused_holo:I = 0x7f02710e
 
-.field public static final vpi__tab_selected_holo:I = 0x7f02010f
+.field public static final vpi__tab_selected_holo:I = 0x7f02710f
 
-.field public static final vpi__tab_selected_pressed_holo:I = 0x7f020110
+.field public static final vpi__tab_selected_pressed_holo:I = 0x7f027110
 
-.field public static final vpi__tab_unselected_focused_holo:I = 0x7f020111
+.field public static final vpi__tab_unselected_focused_holo:I = 0x7f027111
 
-.field public static final vpi__tab_unselected_holo:I = 0x7f020112
+.field public static final vpi__tab_unselected_holo:I = 0x7f027112
 
-.field public static final vpi__tab_unselected_pressed_holo:I = 0x7f020113
+.field public static final vpi__tab_unselected_pressed_holo:I = 0x7f027113
 
 
 # direct methods

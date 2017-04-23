@@ -15,15 +15,15 @@
 
 
 # static fields
-.field public static final TextAppearance_TabPageIndicator:I = 0x7f0c0009
+.field public static final TextAppearance_TabPageIndicator:I = 0x7f0c7009
 
-.field public static final Theme_PageIndicatorDefaults:I = 0x7f0c0006
+.field public static final Theme_PageIndicatorDefaults:I = 0x7f0c7006
 
-.field public static final Widget:I = 0x7f0c0007
+.field public static final Widget:I = 0x7f0c7007
 
-.field public static final Widget_IconPageIndicator:I = 0x7f0c000a
+.field public static final Widget_IconPageIndicator:I = 0x7f0c700a
 
-.field public static final Widget_TabPageIndicator:I = 0x7f0c0008
+.field public static final Widget_TabPageIndicator:I = 0x7f0c7008
 
 
 # direct methods
