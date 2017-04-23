@@ -441,7 +441,7 @@
 
 .field public static final r_button_center:I = 0x7f0270d4
 
-.field public static final r_button_center_over:I = 0x7f0200d5
+.field public static final r_button_center_over:I = 0x7f0270d5
 
 .field public static final r_button_center_selector:I = 0x7f0270d6
 

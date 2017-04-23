@@ -289,7 +289,7 @@
 
 .field public static final next_ads_icon:I = 0x7f0c70a5
 
-.field public static final next_ads_title:I = 0x7f0c00a6
+.field public static final next_ads_title:I = 0x7f0c70a6
 
 .field public static final next_ads_view:I = 0x7f0c70a4
 

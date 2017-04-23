@@ -329,7 +329,7 @@
   <public type="drawable" name="r_button_b_turbo" id="0x7f0270d0" />
   <public type="drawable" name="r_button_b_turbo_over" id="0x7f0270d1" />
   <public type="drawable" name="r_button_center" id="0x7f0270d4" />
-  <public type="drawable" name="r_button_center_over" id="0x7f0200d5" />
+  <public type="drawable" name="r_button_center_over" id="0x7f0270d5" />
   <public type="drawable" name="r_button_connect" id="0x7f0270d7" />
   <public type="drawable" name="r_button_connect_over" id="0x7f0270d8" />
   <public type="drawable" name="r_button_down" id="0x7f0270da" />
@@ -924,7 +924,7 @@
   <public type="id" name="title" id="0x7f0c00ff" />
   <public type="id" name="next_ads_view" id="0x7f0c70a4" />
   <public type="id" name="next_ads_icon" id="0x7f0c70a5" />
-  <public type="id" name="next_ads_title" id="0x7f0c00a6" />
+  <public type="id" name="next_ads_title" id="0x7f0c70a6" />
   <public type="id" name="next_ads_content" id="0x7f0c70a7" />
   <public type="id" name="header_title" id="0x7f0c70a8" />
   <public type="id" name="items" id="0x7f0c70a9" />
