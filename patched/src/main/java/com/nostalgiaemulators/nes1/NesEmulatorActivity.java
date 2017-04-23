@@ -49,6 +49,9 @@ public class NesEmulatorActivity extends EmulatorActivity {
     @Override
     public void onBackPressed()
     {
+        if(getPackageName().equals("com.qiang.nes.emulator"))
+            super.onBackPressed();
+
         if(MetaDataHelper.getBoolean("DEBUG") || MetaDataHelper.getString("UMENG_CHANNEL").equals("dangbei") || new Date().getTime() - SystemHelper.getLastUpdateTime() > 8 * 60 * 60 * 1000)
             RecommendManager.showDialog(this);
         else
