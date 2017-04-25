@@ -226,7 +226,10 @@ android {
 
             resValue "bool", "multiplayer", "true"
 
-            addManifestPlaceholders([UMENG_APPKEY: "58aa733d1c5dd059600003ef"])
+            resValue "string", "DANGBEIAD_APPID", "C5s2EVsaN5uSuLPunnAvkwgNtmTNDpPBHXEaWgftQJCSVMFP"
+            resValue "string", "DANGBEIAD_APPKEY", "7D7CCF1E788E3DEE"
+
+            addManifestPlaceholders([UMENG_APPKEY: "58fed73d9f06fd13ac0005da"])
         }
 
         xiaoaojianghu {
