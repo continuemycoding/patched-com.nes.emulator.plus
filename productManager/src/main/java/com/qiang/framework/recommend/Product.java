@@ -29,6 +29,7 @@ public class Product
     public boolean multiplayer;
     public String app_type;
     public int dislike;
+    public int recommend;
 
     @Override
     public String toString()
