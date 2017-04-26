@@ -758,6 +758,18 @@ android {
 
             addManifestPlaceholders([UMENG_APPKEY: "58f5984907fe655b64000935"])
         }
+
+        xuerenxiongdi {
+            resValue "string", "app_name", "雪人兄弟"
+            resValue "string", "app_type", "动作冒险"
+
+            resValue "bool", "multiplayer", "true"
+
+            resValue "string", "DANGBEIAD_APPID", "fQXPprqKMPbWjWHKakywXZEZ3HW5A5FxxvjjMFkgUCyFpyqa"
+            resValue "string", "DANGBEIAD_APPKEY", "51E587E747469D5F"
+
+            addManifestPlaceholders([UMENG_APPKEY: "5900b0f965b6d60e4d00036d"])
+        }
     }
 
     productFlavors.all { productFlavor ->
