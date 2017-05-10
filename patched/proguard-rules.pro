@@ -39,7 +39,6 @@
 -keep class com.db.android.api.** {*;}
 
 -dontwarn com.nostalgiaemulators.**
--keep class com.nostalgiaemulators.** {*;}
 
 -keep class *  implements java.io.Serializable {*;}
 
