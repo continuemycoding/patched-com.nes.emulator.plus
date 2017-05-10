@@ -26,13 +26,13 @@ public abstract class EmulatorApplication extends MyApplication {
 
         super.onCreate();
 
-        Log.setDebugMode(MetaDataHelper.getBoolean("DEBUG"));
+        Log.setDebugMode(BuildConfig.DEBUG);
         initVersionCodes();
 
         AdSystem.getInstance(this).init(MetaDataHelper.getString("DANGBEIAD_APPID"), MetaDataHelper.getString("DANGBEIAD_APPKEY"));
         //ReflectHelper.invokeStaticMethod("com.db.android.api.AdSystem", "init", new Object[]{MetaDataHelper.getString("DANGBEIAD_APPID"), MetaDataHelper.getString("DANGBEIAD_APPKEY")});
 
-        AdSystem.setLogState(MetaDataHelper.getBoolean("DEBUG"));
+        AdSystem.setLogState(BuildConfig.DEBUG);
         //ReflectHelper.invokeStaticMethod("com.db.android.api.AdSystem", "setLogState", new Object[]{com.qiang.framework.BuildConfig.DEBUG});
     }
 

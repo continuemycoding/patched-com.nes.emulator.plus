@@ -102,9 +102,7 @@
                 <data android:scheme="package" />
             </intent-filter>
         </receiver>
-
-        <meta-data android:name="DEBUG" android:value="true" />
-
+        
         <meta-data android:name="multiplayer" android:value="@bool/multiplayer" />
 
         <meta-data android:name="UMENG_APPKEY" android:value="${UMENG_APPKEY}" />
