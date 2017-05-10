@@ -90,8 +90,8 @@ android {
         // of the source app. (Data is displayed when the source apk library is built.)
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 153
-        versionName "1.53"
+        versionCode 156
+        versionName "1.56"
 
 //        resValue "string", "button_a", "按钮A"
 //        resValue "string", "button_b", "按钮B"

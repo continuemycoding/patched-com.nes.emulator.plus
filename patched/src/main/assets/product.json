@@ -28,20 +28,6 @@
     "recommend": 0
   },
   {
-    "name": "雪人兄弟",
-    "packageName": "com.qiang.nes.xuerenxiongdi",
-    "dangbei_appId": 0,
-    "versionName": "1.53",
-    "versionCode": 153,
-    "app_code": 0,
-    "url": "",
-    "releaseNote": "版本更新",
-    "app_scanimg": "",
-    "multiplayer": true,
-    "app_type": "动作冒险",
-    "recommend": 0
-  },
-  {
     "name": "笑傲江湖",
     "packageName": "com.qiang.nes.xiaoaojianghu",
     "dangbei_appId": 5277,
@@ -388,6 +374,20 @@
     "releaseNote": "版本更新",
     "app_scanimg": "http://img.znds.com/uploads/new/170426/9-1F426131R4I4.jpg!h450,http://img.znds.com/uploads/new/170426/9-1F426131S1158.jpg!h450,http://img.znds.com/uploads/new/170426/9-1F426131S94a.jpg!h450,http://img.znds.com/uploads/new/170426/9-1F426131T9346.jpg!h450,http://img.znds.com/uploads/new/170426/9-1F426131U6215.jpg!h450",
     "multiplayer": false,
+    "app_type": "动作冒险",
+    "recommend": 0
+  },
+  {
+    "name": "雪人兄弟",
+    "packageName": "com.qiang.nes.xuerenxiongdi",
+    "dangbei_appId": 5452,
+    "versionName": "1.53",
+    "versionCode": 153,
+    "app_code": 0,
+    "url": "http://app.znds.com/down/20170427/xrxd_1.53_dangbei.apk",
+    "releaseNote": "版本更新",
+    "app_scanimg": "http://img.znds.com/uploads/new/170427/19-1F42G32605628.jpg!h450,http://img.znds.com/uploads/new/170427/19-1F42G3261T04.jpg!h450,http://img.znds.com/uploads/new/170427/19-1F42G3262B23.jpg!h450,http://img.znds.com/uploads/new/170427/19-1F42G3263E60.jpg!h450,http://img.znds.com/uploads/new/170427/19-1F42G32644211.jpg!h450",
+    "multiplayer": true,
     "app_type": "动作冒险",
     "recommend": 0
   }
