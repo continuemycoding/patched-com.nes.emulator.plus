@@ -3,6 +3,7 @@ package com.nostalgiaemulators.nes1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.annotation.Keep;
 
 import com.db.android.api.listener.AdListener;
 import com.nostalgiaemulators.framework.Emulator;
@@ -24,6 +25,7 @@ import lanchon.dexpatcher.annotation.DexIgnore;
  * Created by Administrator on 2017/3/16.
  */
 
+@Keep
 @DexEdit //(staticConstructorAction = DexAction.IGNORE)
 public class NesGalleryActivity extends GalleryActivity{
 

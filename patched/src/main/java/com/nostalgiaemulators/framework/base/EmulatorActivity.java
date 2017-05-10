@@ -2,6 +2,7 @@ package com.nostalgiaemulators.framework.base;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.support.annotation.Keep;
 
 import com.nostalgiaemulators.framework.Emulator;
 import com.nostalgiaemulators.framework.controllers.TouchController;
@@ -16,6 +17,7 @@ import lanchon.dexpatcher.annotation.DexReplace;
  * Created by Administrator on 2017/3/16.
  */
 
+@Keep
 @DexEdit(defaultAction = DexAction.IGNORE)
 public abstract class EmulatorActivity extends ImmersiveActivity implements GameMenu.OnGameMenuListener{
 

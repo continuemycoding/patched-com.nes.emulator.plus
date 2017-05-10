@@ -1,6 +1,7 @@
 package com.nostalgiaemulators.framework.utils;
 
 import android.app.Activity;
+import android.support.annotation.Keep;
 
 import lanchon.dexpatcher.annotation.DexEdit;
 import lanchon.dexpatcher.annotation.DexReplace;
@@ -9,6 +10,7 @@ import lanchon.dexpatcher.annotation.DexReplace;
  * Created by Administrator on 2017/3/17.
  */
 
+@Keep
 @DexReplace
 public class GoogleAnalyticsHelper {
     private static GoogleAnalyticsHelper instance;

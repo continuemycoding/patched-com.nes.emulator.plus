@@ -1,5 +1,7 @@
 package com.nostalgiaemulators.framework.ui.gamegallery;
 
+import android.support.annotation.Keep;
+
 import com.nostalgiaemulators.framework.remote.ControllableActivity;
 
 import java.io.File;
@@ -13,6 +15,7 @@ import lanchon.dexpatcher.annotation.DexIgnore;
  * Created by Administrator on 2017/3/17.
  */
 
+@Keep
 @DexEdit
 public abstract class BaseGameGalleryActivity extends ControllableActivity implements RomsFinder.OnRomsFinderListener{
     @DexIgnore

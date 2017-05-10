@@ -1,5 +1,7 @@
 package com.nostalgiaemulators.framework.ui.gamegallery;
 
+import android.support.annotation.Keep;
+
 import com.nostalgiaemulators.framework.base.GameMenu;
 import com.nostalgiaemulators.framework.remote.VirtualDPad;
 
@@ -12,6 +14,7 @@ import lanchon.dexpatcher.annotation.DexReplace;
  * Created by Administrator on 2017/3/17.
  */
 
+@Keep
 @DexIgnore
 public abstract class GalleryActivity extends BaseGameGalleryActivity implements GalleryPagerAdapter.OnItemClickListener, GameMenu.OnGameMenuListener, VirtualDPad.OnVirtualDPEventsListener{
 

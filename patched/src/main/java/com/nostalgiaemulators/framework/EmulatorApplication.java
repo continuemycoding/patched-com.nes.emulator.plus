@@ -1,5 +1,7 @@
 package com.nostalgiaemulators.framework;
 
+import android.support.annotation.Keep;
+
 import com.db.android.api.AdSystem;
 import com.nostalgiaemulators.framework.utils.Log;
 import com.qiang.framework.MyApplication;
@@ -14,6 +16,7 @@ import lanchon.dexpatcher.annotation.DexReplace;
  * Created by Administrator on 2017/3/30.
  */
 
+@Keep
 @DexEdit(defaultAction = DexAction.IGNORE)
 public abstract class EmulatorApplication extends MyApplication {
 

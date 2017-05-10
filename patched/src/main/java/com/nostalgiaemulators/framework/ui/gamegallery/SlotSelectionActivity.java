@@ -2,6 +2,7 @@ package com.nostalgiaemulators.framework.ui.gamegallery;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.support.annotation.Keep;
 
 import com.nostalgiaemulators.framework.remote.ControllableActivity;
 
@@ -14,6 +15,7 @@ import lanchon.dexpatcher.annotation.DexReplace;
  * Created by Administrator on 2017/4/5.
  */
 
+@Keep
 @DexEdit(defaultAction = DexAction.IGNORE)
 public class SlotSelectionActivity extends ControllableActivity {
 

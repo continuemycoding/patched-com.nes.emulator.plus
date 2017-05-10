@@ -1,6 +1,7 @@
 package com.nostalgiaemulators.framework.controllers;
 
 import android.content.Context;
+import android.support.annotation.Keep;
 import android.view.InputDevice;
 import android.view.InputEvent;
 import android.view.KeyEvent;
@@ -20,6 +21,7 @@ import lanchon.dexpatcher.annotation.*;
  * Created by Administrator on 2017/3/30.
  */
 
+@Keep
 @DexEdit(defaultAction = DexAction.IGNORE)
 public class KeyboardController implements EmulatorController {
 

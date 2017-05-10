@@ -1,6 +1,7 @@
 package com.google.android.gms.ads;
 
 import android.content.Context;
+import android.support.annotation.Keep;
 import android.view.ViewGroup;
 
 import lanchon.dexpatcher.annotation.DexAdd;
@@ -12,6 +13,7 @@ import lanchon.dexpatcher.annotation.DexReplace;
  * Created by Administrator on 2017/3/16.
  */
 
+@Keep
 @DexEdit
 public class BaseAdView extends ViewGroup {
 

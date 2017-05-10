@@ -1,6 +1,7 @@
 package com.nostalgiaemulators.nes1;
 
 import android.os.Bundle;
+import android.support.annotation.Keep;
 
 import com.nostalgiaemulators.framework.*;
 import com.nostalgiaemulators.framework.base.*;
@@ -18,6 +19,7 @@ import lanchon.dexpatcher.annotation.*;
  * Created by Administrator on 2017/3/15.
  */
 
+@Keep
 @DexEdit
 public class NesEmulatorActivity extends EmulatorActivity {
 

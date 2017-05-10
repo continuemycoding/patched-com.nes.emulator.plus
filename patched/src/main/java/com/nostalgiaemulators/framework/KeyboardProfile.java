@@ -1,5 +1,6 @@
 package com.nostalgiaemulators.framework;
 
+import android.support.annotation.Keep;
 import android.util.SparseIntArray;
 import android.view.KeyEvent;
 
@@ -12,6 +13,7 @@ import lanchon.dexpatcher.annotation.DexReplace;
  * Created by Administrator on 2017/3/19.
  */
 
+@Keep
 @DexEdit
 public class KeyboardProfile {
     @DexIgnore
