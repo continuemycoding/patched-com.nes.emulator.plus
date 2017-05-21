@@ -1,5 +1,4 @@
-gradlew clean ^
-        :patched:assembleShuangjielong2Weijing ^
+gradlew :patched:assembleShuangjielong2Weijing ^
         :patched:assembleShuangjielong3Weijing ^
         :patched:assembleChaojimaliWeijing ^
         :patched:assembleChaojimali2Weijing ^
